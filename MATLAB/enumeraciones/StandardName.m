@@ -1,0 +1,22 @@
+classdef StandardName
+    enumeration
+        altitud
+        bird_count
+        boat_side
+        common_name
+        height
+        latitude
+        longitude
+        nest_count
+        nest_id
+        nest_occupancy
+        none
+        point_id
+        projection_x_coordinate
+        projection_y_coordinate
+        scientific_name
+        sighting_direction
+        sighting_distance
+        time
+    end
+end
