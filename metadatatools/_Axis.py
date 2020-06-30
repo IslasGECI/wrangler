@@ -8,16 +8,16 @@ class Axis(Enum):
 
     Identificadores válidos
 
-    C : 
-    I : 
-    N : 
-    P : 
-    R : 
-    S : 
-    T : 
+    C :
+    I :
+    N :
+    P :
+    R :
+    S :
+    T :
     X :
-    Y : 
-    Z : 
+    Y :
+    Z :
     """
 
     C = auto()

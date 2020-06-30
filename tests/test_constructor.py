@@ -1,10 +1,10 @@
 import unittest
-from DataTable import DataTable
+from Tablanal import DataTable
 
 
 class TestConstructor(unittest.TestCase):
     def test_ConstructorVacio(self):
-        Tabla = DataTable.DataTable()
+        Tabla = DataTable()
         self.assertEqual(type(Tabla).__name__, "DataTable")
 
 
