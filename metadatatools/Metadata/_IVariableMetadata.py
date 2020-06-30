@@ -4,7 +4,6 @@ from .. import Axis, StandardName
 
 
 class IVariableMetadata(ABC):
-
     @property
     @abstractmethod
     def axis(self):

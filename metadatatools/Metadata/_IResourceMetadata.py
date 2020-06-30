@@ -2,7 +2,6 @@ from abc import ABC, abstractmethod
 
 
 class IResourceMetadata(ABC):
-
     @property
     @abstractmethod
     def id(self):

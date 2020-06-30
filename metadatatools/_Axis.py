@@ -19,6 +19,7 @@ class Axis(Enum):
     Y : 
     Z : 
     """
+
     C = auto()
     I = auto()
     N = auto()

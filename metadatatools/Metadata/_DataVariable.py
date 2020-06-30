@@ -6,7 +6,6 @@ from ._VariableMetadata import VariableMetadata
 
 
 class DataVariable(IDataVariable):
-
     def __init__(self):
         self._datos = None
         self._metadatos: IVariableMetadata = VariableMetadata()

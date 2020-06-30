@@ -8,7 +8,6 @@ import copy
 
 
 class DataTable:
-
     def __init__(self):
         self._datos = None
         self._metadatos = None
@@ -19,8 +18,7 @@ class DataTable:
         datos_filtrados._datos = self._datos.copy(deep=True)
         datos_filtrados._datos = datos_filtrados._datos[funcion_filtrado]
         datos_filtrados._metadatos = copy.deepcopy(self._metadatos)
-        datos_filtrados._metadatos_variables = copy.deepcopy(
-            self._metadatos_variables)
+        datos_filtrados._metadatos_variables = copy.deepcopy(self._metadatos_variables)
         return datos_filtrados
 
     def __str__(self):
@@ -52,7 +50,8 @@ class DataTable:
     def add_variable_metadata(self, variable_metadata):
         if not isinstance(variable_metadata, VariableMetadata):
             raise TypeError(
-                "Se espera un objeto de la clase datatoos.Metadatos.VariableMetadata")
+                "Se espera un objeto de la clase datatoos.Metadatos.VariableMetadata"
+            )
         self._metadatos_variables.append(variable_metadata)
 
     def get_variable_name_from_attribute(self):
@@ -68,16 +67,14 @@ class DataTable:
 
     def get_variable_name_from_standard_name(self, standard_name: Axis):
         if not isinstance(standard_name, StandardName):
-            raise TypeError(
-                "Se espera un objeto de la clase datatoos.StandardName")
+            raise TypeError("Se espera un objeto de la clase datatoos.StandardName")
         for variable in self._metadatos_variables:
             if standard_name == variable.standard_name:
                 return variable.name
         return None
 
     def apply(self, funcion, nombre_columna):
-        self._datos[nombre_columna] = self._datos[nombre_columna].apply(
-            funcion)
+        self._datos[nombre_columna] = self._datos[nombre_columna].apply(funcion)
 
     def get_value(self, nombre_columna):
         return self._datos[nombre_columna].values

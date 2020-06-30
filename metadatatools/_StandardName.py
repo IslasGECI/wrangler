@@ -5,6 +5,7 @@ class StandardName(Enum):
     """
     Nombre estándar que representa a este tipo de dato
     """
+
     date = auto()
     effort = auto()
     age_of_sea_ice = auto()
@@ -46,7 +47,9 @@ class StandardName(Enum):
     atmosphere_absorption_optical_thickness_due_to_ambient_aerosol = auto()
     atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol = auto()
     atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol = auto()
-    atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol = auto()
+    atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol = (
+        auto()
+    )
     atmosphere_absorption_optical_thickness_due_to_seasalt_ambient_aerosol = auto()
     atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol = auto()
     atmosphere_boundary_layer_thickness = auto()
@@ -297,7 +300,9 @@ class StandardName(Enum):
     atmosphere_optical_thickness_due_to_convective_cloud = auto()
     atmosphere_optical_thickness_due_to_dust_ambient_aerosol = auto()
     atmosphere_optical_thickness_due_to_dust_dry_aerosol = auto()
-    atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol = auto()
+    atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol = (
+        auto()
+    )
     atmosphere_optical_thickness_due_to_pm10_ambient_aerosol = auto()
     atmosphere_optical_thickness_due_to_pm1_ambient_aerosol = auto()
     atmosphere_optical_thickness_due_to_pm2p5_ambient_aerosol = auto()
@@ -346,8 +351,12 @@ class StandardName(Enum):
     carbon_mass_flux_into_soil_from_vegetation_excluding_litter = auto()
     cell_area = auto()
     cell_thickness = auto()
-    change_in_atmosphere_energy_content_due_to_change_in_sigma_coordinate_wrt_surface_pressure = auto()
-    change_in_energy_content_of_atmosphere_layer_due_to_change_in_sigma_coordinate_wrt_surface_pressure = auto()
+    change_in_atmosphere_energy_content_due_to_change_in_sigma_coordinate_wrt_surface_pressure = (
+        auto()
+    )
+    change_in_energy_content_of_atmosphere_layer_due_to_change_in_sigma_coordinate_wrt_surface_pressure = (
+        auto()
+    )
     change_over_time_in_atmosphere_mass_content_of_water_due_to_advection = auto()
     change_over_time_in_sea_water_absolute_salinity = auto()
     change_over_time_in_sea_water_conservative_temperature = auto()
@@ -389,7 +398,9 @@ class StandardName(Enum):
     correction_for_model_negative_specific_humidity = auto()
     depth = auto()
     depth_at_maximum_upward_derivative_of_sea_water_potential_temperature = auto()
-    depth_at_shallowest_local_minimum_in_vertical_profile_of_mole_concentration_of_dissolved_molecular_oxygen_in_sea_water = auto()
+    depth_at_shallowest_local_minimum_in_vertical_profile_of_mole_concentration_of_dissolved_molecular_oxygen_in_sea_water = (
+        auto()
+    )
     depth_below_geoid = auto()
     depth_of_isosurface_of_sea_water_potential_temperature = auto()
     dew_point_depression = auto()
@@ -523,14 +534,18 @@ class StandardName(Enum):
     heterotrophic_respiration_carbon_flux = auto()
     high_type_cloud_area_fraction = auto()
     histogram_of_backscattering_ratio_over_height_above_reference_ellipsoid = auto()
-    histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid = auto()
+    histogram_of_equivalent_reflectivity_factor_over_height_above_reference_ellipsoid = (
+        auto()
+    )
     horizontal_atmosphere_dry_energy_transport = auto()
     horizontal_dry_energy_transport_in_atmosphere_layer = auto()
     humidity_mixing_ratio = auto()
     integral_of_air_temperature_deficit_wrt_time = auto()
     integral_of_air_temperature_excess_wrt_time = auto()
     integral_of_sea_ice_temperature_wrt_depth_expressed_as_heat_content = auto()
-    integral_of_sea_water_potential_temperature_wrt_depth_expressed_as_heat_content = auto()
+    integral_of_sea_water_potential_temperature_wrt_depth_expressed_as_heat_content = (
+        auto()
+    )
     integral_of_sea_water_temperature_wrt_depth_in_ocean_layer = auto()
     integral_of_surface_downward_eastward_stress_wrt_time = auto()
     integral_of_surface_downward_latent_heat_flux_wrt_time = auto()
@@ -542,8 +557,12 @@ class StandardName(Enum):
     integral_of_surface_net_downward_shortwave_flux_wrt_time = auto()
     integral_of_toa_net_downward_shortwave_flux_wrt_time = auto()
     integral_of_toa_outgoing_longwave_flux_wrt_time = auto()
-    integral_wrt_depth_of_tendency_of_sea_water_alkalinity_expressed_as_mole_equivalent = auto()
-    integral_wrt_depth_of_tendency_of_sea_water_alkalinity_expressed_as_mole_equivalent_due_to_biological_processes = auto()
+    integral_wrt_depth_of_tendency_of_sea_water_alkalinity_expressed_as_mole_equivalent = (
+        auto()
+    )
+    integral_wrt_depth_of_tendency_of_sea_water_alkalinity_expressed_as_mole_equivalent_due_to_biological_processes = (
+        auto()
+    )
     isccp_cloud_area_fraction = auto()
     isotropic_longwave_radiance_in_air = auto()
     isotropic_radiance_per_unit_wavelength_in_air = auto()
@@ -631,7 +650,9 @@ class StandardName(Enum):
     mass_concentration_of_bromine_nitrate_in_air = auto()
     mass_concentration_of_brox_expressed_as_bromine_in_air = auto()
     mass_concentration_of_butane_in_air = auto()
-    mass_concentration_of_calcareous_phytoplankton_expressed_as_chlorophyll_in_sea_water = auto()
+    mass_concentration_of_calcareous_phytoplankton_expressed_as_chlorophyll_in_sea_water = (
+        auto()
+    )
     mass_concentration_of_carbon_dioxide_in_air = auto()
     mass_concentration_of_carbon_monoxide_in_air = auto()
     mass_concentration_of_carbon_tetrachloride_in_air = auto()
@@ -700,7 +721,9 @@ class StandardName(Enum):
     mass_concentration_of_methyl_chloride_in_air = auto()
     mass_concentration_of_methyl_hydroperoxide_in_air = auto()
     mass_concentration_of_methyl_peroxy_radical_in_air = auto()
-    mass_concentration_of_miscellaneous_phytoplankton_expressed_as_chlorophyll_in_sea_water = auto()
+    mass_concentration_of_miscellaneous_phytoplankton_expressed_as_chlorophyll_in_sea_water = (
+        auto()
+    )
     mass_concentration_of_molecular_hydrogen_in_air = auto()
     mass_concentration_of_nitrate_dry_aerosol_in_air = auto()
     mass_concentration_of_nitrate_radical_in_air = auto()
@@ -724,7 +747,9 @@ class StandardName(Enum):
     mass_concentration_of_peroxy_radicals_in_air = auto()
     mass_concentration_of_phosphate_in_sea_water = auto()
     mass_concentration_of_phytoplankton_expressed_as_chlorophyll_in_sea_water = auto()
-    mass_concentration_of_picophytoplankton_expressed_as_chlorophyll_in_sea_water = auto()
+    mass_concentration_of_picophytoplankton_expressed_as_chlorophyll_in_sea_water = (
+        auto()
+    )
     mass_concentration_of_pm10_ambient_aerosol_in_air = auto()
     mass_concentration_of_pm1_ambient_aerosol_in_air = auto()
     mass_concentration_of_pm2p5_ambient_aerosol_in_air = auto()
@@ -734,7 +759,9 @@ class StandardName(Enum):
     mass_concentration_of_radon_in_air = auto()
     mass_concentration_of_rain_in_air = auto()
     mass_concentration_of_seasalt_dry_aerosol_in_air = auto()
-    mass_concentration_of_secondary_particulate_organic_matter_dry_aerosol_in_air = auto()
+    mass_concentration_of_secondary_particulate_organic_matter_dry_aerosol_in_air = (
+        auto()
+    )
     mass_concentration_of_silicate_in_sea_water = auto()
     mass_concentration_of_sulfate_ambient_aerosol_in_air = auto()
     mass_concentration_of_sulfate_dry_aerosol_in_air = auto()
@@ -901,7 +928,9 @@ class StandardName(Enum):
     mole_concentration_of_ammonium_in_sea_water = auto()
     mole_concentration_of_anthropogenic_nmvoc_expressed_as_carbon_in_air = auto()
     mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water = auto()
-    mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water_at_saturation = auto()
+    mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water_at_saturation = (
+        auto()
+    )
     mole_concentration_of_atomic_bromine_in_air = auto()
     mole_concentration_of_atomic_chlorine_in_air = auto()
     mole_concentration_of_atomic_nitrogen_in_air = auto()
@@ -914,9 +943,13 @@ class StandardName(Enum):
     mole_concentration_of_bromine_nitrate_in_air = auto()
     mole_concentration_of_brox_expressed_as_bromine_in_air = auto()
     mole_concentration_of_butane_in_air = auto()
-    mole_concentration_of_calcareous_phytoplankton_expressed_as_carbon_in_sea_water = auto()
+    mole_concentration_of_calcareous_phytoplankton_expressed_as_carbon_in_sea_water = (
+        auto()
+    )
     mole_concentration_of_calcite_expressed_as_carbon_in_sea_water = auto()
-    mole_concentration_of_calcite_expressed_as_carbon_in_sea_water_at_saturation = auto()
+    mole_concentration_of_calcite_expressed_as_carbon_in_sea_water_at_saturation = (
+        auto()
+    )
     mole_concentration_of_carbonate_expressed_as_carbon_in_sea_water = auto()
     mole_concentration_of_carbon_dioxide_in_air = auto()
     mole_concentration_of_carbon_monoxide_in_air = auto()
@@ -941,7 +974,9 @@ class StandardName(Enum):
     mole_concentration_of_dissolved_inorganic_carbon_in_sea_water = auto()
     mole_concentration_of_dissolved_iron_in_sea_water = auto()
     mole_concentration_of_dissolved_molecular_oxygen_in_sea_water = auto()
-    mole_concentration_of_dissolved_molecular_oxygen_in_sea_water_at_shallowest_local_minimum_in_vertical_profile = auto()
+    mole_concentration_of_dissolved_molecular_oxygen_in_sea_water_at_shallowest_local_minimum_in_vertical_profile = (
+        auto()
+    )
     mole_concentration_of_dissolved_organic_carbon_in_sea_water = auto()
     mole_concentration_of_ethane_in_air = auto()
     mole_concentration_of_ethanol_in_air = auto()
@@ -983,8 +1018,12 @@ class StandardName(Enum):
     mole_concentration_of_methyl_peroxy_radical_in_air = auto()
     mole_concentration_of_microzooplankton_expressed_as_carbon_in_sea_water = auto()
     mole_concentration_of_microzooplankton_expressed_as_nitrogen_in_sea_water = auto()
-    mole_concentration_of_miscellaneous_phytoplankton_expressed_as_carbon_in_sea_water = auto()
-    mole_concentration_of_miscellaneous_zooplankton_expressed_as_carbon_in_sea_water = auto()
+    mole_concentration_of_miscellaneous_phytoplankton_expressed_as_carbon_in_sea_water = (
+        auto()
+    )
+    mole_concentration_of_miscellaneous_zooplankton_expressed_as_carbon_in_sea_water = (
+        auto()
+    )
     mole_concentration_of_molecular_hydrogen_in_air = auto()
     mole_concentration_of_nitrate_and_nitrite_in_sea_water = auto()
     mole_concentration_of_nitrate_in_sea_water = auto()
@@ -1004,9 +1043,15 @@ class StandardName(Enum):
     mole_concentration_of_organic_detritus_expressed_as_silicon_in_sea_water = auto()
     mole_concentration_of_ozone_in_air = auto()
     mole_concentration_of_particulate_matter_expressed_as_silicon_in_sea_water = auto()
-    mole_concentration_of_particulate_organic_matter_expressed_as_iron_in_sea_water = auto()
-    mole_concentration_of_particulate_organic_matter_expressed_as_nitrogen_in_sea_water = auto()
-    mole_concentration_of_particulate_organic_matter_expressed_as_phosphorus_in_sea_water = auto()
+    mole_concentration_of_particulate_organic_matter_expressed_as_iron_in_sea_water = (
+        auto()
+    )
+    mole_concentration_of_particulate_organic_matter_expressed_as_nitrogen_in_sea_water = (
+        auto()
+    )
+    mole_concentration_of_particulate_organic_matter_expressed_as_phosphorus_in_sea_water = (
+        auto()
+    )
     mole_concentration_of_peroxyacetyl_nitrate_in_air = auto()
     mole_concentration_of_peroxynitric_acid_in_air = auto()
     mole_concentration_of_phosphate_in_sea_water = auto()
@@ -1135,17 +1180,33 @@ class StandardName(Enum):
     net_downward_shortwave_flux_at_sea_water_surface = auto()
     net_downward_shortwave_flux_in_air = auto()
     net_downward_shortwave_flux_in_air_assuming_clear_sky = auto()
-    net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_calcareous_phytoplankton = auto()
+    net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_calcareous_phytoplankton = (
+        auto()
+    )
     net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_diatoms = auto()
     net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_diazotrophs = auto()
-    net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_miscellaneous_phytoplankton = auto()
-    net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_phytoplankton = auto()
-    net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_picophytoplankton = auto()
-    net_primary_mole_productivity_of_biomass_expressed_as_carbon_due_to_nitrate_utilization = auto()
-    net_primary_production_of_biomass_expressed_as_carbon_per_unit_volume_in_sea_water = auto()
+    net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_miscellaneous_phytoplankton = (
+        auto()
+    )
+    net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_phytoplankton = (
+        auto()
+    )
+    net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_picophytoplankton = (
+        auto()
+    )
+    net_primary_mole_productivity_of_biomass_expressed_as_carbon_due_to_nitrate_utilization = (
+        auto()
+    )
+    net_primary_production_of_biomass_expressed_as_carbon_per_unit_volume_in_sea_water = (
+        auto()
+    )
     net_primary_productivity_of_biomass_expressed_as_carbon = auto()
-    net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_leaves = auto()
-    net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_roots = auto()
+    net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_leaves = (
+        auto()
+    )
+    net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_roots = (
+        auto()
+    )
     net_primary_productivity_of_biomass_expressed_as_carbon_accumulated_in_wood = auto()
     net_rate_of_absorption_of_longwave_energy_in_atmosphere_layer = auto()
     net_rate_of_absorption_of_shortwave_energy_in_atmosphere_layer = auto()
@@ -1189,7 +1250,9 @@ class StandardName(Enum):
     northward_wind_shear = auto()
     number_concentration_of_ambient_aerosol_in_air = auto()
     number_concentration_of_cloud_liquid_water_particles_in_air = auto()
-    number_concentration_of_cloud_liquid_water_particles_in_air_at_liquid_water_cloud_top = auto()
+    number_concentration_of_cloud_liquid_water_particles_in_air_at_liquid_water_cloud_top = (
+        auto()
+    )
     number_concentration_of_coarse_mode_ambient_aerosol_in_air = auto()
     number_concentration_of_ice_crystals_in_air = auto()
     number_concentration_of_ice_crystals_in_air_at_ice_cloud_top = auto()
@@ -1383,14 +1446,22 @@ class StandardName(Enum):
     sea_surface_height_amplitude_due_to_non_equilibrium_ocean_tide = auto()
     sea_surface_height_amplitude_due_to_pole_tide = auto()
     sea_surface_height_bias_due_to_sea_surface_roughness = auto()
-    sea_surface_height_correction_due_to_air_pressure_and_wind_at_high_frequency = auto()
+    sea_surface_height_correction_due_to_air_pressure_and_wind_at_high_frequency = (
+        auto()
+    )
     sea_surface_height_correction_due_to_air_pressure_at_low_frequency = auto()
     sea_surface_salinity = auto()
     sea_surface_skin_temperature = auto()
     sea_surface_subskin_temperature = auto()
-    sea_surface_swell_wave_mean_period_from_variance_spectral_density_first_frequency_moment = auto()
-    sea_surface_swell_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment = auto()
-    sea_surface_swell_wave_mean_period_from_variance_spectral_density_second_frequency_moment = auto()
+    sea_surface_swell_wave_mean_period_from_variance_spectral_density_first_frequency_moment = (
+        auto()
+    )
+    sea_surface_swell_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment = (
+        auto()
+    )
+    sea_surface_swell_wave_mean_period_from_variance_spectral_density_second_frequency_moment = (
+        auto()
+    )
     sea_surface_swell_wave_period = auto()
     sea_surface_swell_wave_significant_height = auto()
     sea_surface_swell_wave_to_direction = auto()
@@ -1398,17 +1469,29 @@ class StandardName(Enum):
     sea_surface_temperature = auto()
     sea_surface_wave_directional_variance_spectral_density = auto()
     sea_surface_wave_from_direction = auto()
-    sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment = auto()
-    sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment = auto()
-    sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment = auto()
+    sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment = (
+        auto()
+    )
+    sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment = (
+        auto()
+    )
+    sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment = (
+        auto()
+    )
     sea_surface_wave_period_at_variance_spectral_density_maximum = auto()
     sea_surface_wave_significant_height = auto()
     sea_surface_wave_to_direction = auto()
     sea_surface_wave_variance_spectral_density = auto()
     sea_surface_wave_zero_upcrossing_period = auto()
-    sea_surface_wind_wave_mean_period_from_variance_spectral_density_first_frequency_moment = auto()
-    sea_surface_wind_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment = auto()
-    sea_surface_wind_wave_mean_period_from_variance_spectral_density_second_frequency_moment = auto()
+    sea_surface_wind_wave_mean_period_from_variance_spectral_density_first_frequency_moment = (
+        auto()
+    )
+    sea_surface_wind_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment = (
+        auto()
+    )
+    sea_surface_wind_wave_mean_period_from_variance_spectral_density_second_frequency_moment = (
+        auto()
+    )
     sea_surface_wind_wave_period = auto()
     sea_surface_wind_wave_significant_height = auto()
     sea_surface_wind_wave_to_direction = auto()
@@ -1457,7 +1540,9 @@ class StandardName(Enum):
     sinking_mole_flux_of_aragonite_expressed_as_carbon_in_sea_water = auto()
     sinking_mole_flux_of_calcite_expressed_as_carbon_in_sea_water = auto()
     sinking_mole_flux_of_particulate_iron_in_sea_water = auto()
-    sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water = auto()
+    sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water = (
+        auto()
+    )
     sinking_mole_flux_of_particulate_organic_nitrogen_in_sea_water = auto()
     sinking_mole_flux_of_particulate_organic_phosphorus_in_sea_water = auto()
     sinking_mole_flux_of_particulate_silicon_in_sea_water = auto()
@@ -1501,8 +1586,12 @@ class StandardName(Enum):
     speed_of_sound_in_sea_water = auto()
     spell_length_of_days_with_air_temperature_above_threshold = auto()
     spell_length_of_days_with_air_temperature_below_threshold = auto()
-    spell_length_of_days_with_lwe_thickness_of_precipitation_amount_above_threshold = auto()
-    spell_length_of_days_with_lwe_thickness_of_precipitation_amount_below_threshold = auto()
+    spell_length_of_days_with_lwe_thickness_of_precipitation_amount_above_threshold = (
+        auto()
+    )
+    spell_length_of_days_with_lwe_thickness_of_precipitation_amount_below_threshold = (
+        auto()
+    )
     square_of_air_temperature = auto()
     square_of_brunt_vaisala_frequency_in_air = auto()
     square_of_eastward_wind = auto()
@@ -1538,8 +1627,12 @@ class StandardName(Enum):
     surface_backwards_scattering_coefficient_of_radar_wave = auto()
     surface_bidirectional_reflectance = auto()
     surface_brightness_temperature = auto()
-    surface_carbon_dioxide_partial_pressure_difference_between_air_and_sea_water = auto()
-    surface_carbon_dioxide_partial_pressure_difference_between_sea_water_and_air = auto()
+    surface_carbon_dioxide_partial_pressure_difference_between_air_and_sea_water = (
+        auto()
+    )
+    surface_carbon_dioxide_partial_pressure_difference_between_sea_water_and_air = (
+        auto()
+    )
     surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air = auto()
     surface_diffuse_downwelling_shortwave_flux_in_air = auto()
     surface_diffuse_downwelling_shortwave_flux_in_air_assuming_clear_sky = auto()
@@ -1565,7 +1658,9 @@ class StandardName(Enum):
     surface_downwelling_photon_radiance_in_sea_water = auto()
     surface_downwelling_photon_radiance_per_unit_wavelength_in_sea_water = auto()
     surface_downwelling_photon_spherical_irradiance_in_sea_water = auto()
-    surface_downwelling_photon_spherical_irradiance_per_unit_wavelength_in_sea_water = auto()
+    surface_downwelling_photon_spherical_irradiance_per_unit_wavelength_in_sea_water = (
+        auto()
+    )
     surface_downwelling_photosynthetic_photon_flux_in_air = auto()
     surface_downwelling_photosynthetic_photon_flux_in_sea_water = auto()
     surface_downwelling_photosynthetic_photon_radiance_in_sea_water = auto()
@@ -1590,9 +1685,13 @@ class StandardName(Enum):
     surface_frozen_carbon_dioxide_amount = auto()
     surface_geopotential = auto()
     surface_geostrophic_eastward_sea_water_velocity = auto()
-    surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid = auto()
+    surface_geostrophic_eastward_sea_water_velocity_assuming_sea_level_for_geoid = (
+        auto()
+    )
     surface_geostrophic_northward_sea_water_velocity = auto()
-    surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid = auto()
+    surface_geostrophic_northward_sea_water_velocity_assuming_sea_level_for_geoid = (
+        auto()
+    )
     surface_geostrophic_sea_water_x_velocity = auto()
     surface_geostrophic_sea_water_x_velocity_assuming_sea_level_for_geoid = auto()
     surface_geostrophic_sea_water_y_velocity = auto()
@@ -1600,22 +1699,32 @@ class StandardName(Enum):
     surface_litter_carbon_content = auto()
     surface_longwave_emissivity = auto()
     surface_microwave_emissivity = auto()
-    surface_molecular_oxygen_partial_pressure_difference_between_sea_water_and_air = auto()
+    surface_molecular_oxygen_partial_pressure_difference_between_sea_water_and_air = (
+        auto()
+    )
     surface_net_downward_longwave_flux = auto()
     surface_net_downward_longwave_flux_assuming_clear_sky = auto()
-    surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes = auto()
-    surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes_excluding_anthropogenic_land_use_change = auto()
+    surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes = (
+        auto()
+    )
+    surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes_excluding_anthropogenic_land_use_change = (
+        auto()
+    )
     surface_net_downward_radiative_flux = auto()
     surface_net_downward_shortwave_flux = auto()
     surface_net_downward_shortwave_flux_assuming_clear_sky = auto()
     surface_net_upward_longwave_flux = auto()
-    surface_net_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_anthropogenic_land_use_change = auto()
+    surface_net_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_anthropogenic_land_use_change = (
+        auto()
+    )
     surface_net_upward_radiative_flux = auto()
     surface_net_upward_shortwave_flux = auto()
     surface_northward_sea_water_velocity = auto()
     surface_partial_pressure_of_carbon_dioxide_in_air = auto()
     surface_partial_pressure_of_carbon_dioxide_in_sea_water = auto()
-    surface_ratio_of_upwelling_radiance_emerging_from_sea_water_to_downwelling_radiative_flux_in_air = auto()
+    surface_ratio_of_upwelling_radiance_emerging_from_sea_water_to_downwelling_radiative_flux_in_air = (
+        auto()
+    )
     surface_roughness_length = auto()
     surface_roughness_length_for_heat_in_air = auto()
     surface_roughness_length_for_momentum_in_air = auto()
@@ -1639,13 +1748,23 @@ class StandardName(Enum):
     surface_temperature = auto()
     surface_temperature_anomaly = auto()
     surface_upward_carbon_mass_flux_due_to_plant_respiration_for_biomass_growth = auto()
-    surface_upward_carbon_mass_flux_due_to_plant_respiration_for_biomass_maintenance = auto()
+    surface_upward_carbon_mass_flux_due_to_plant_respiration_for_biomass_maintenance = (
+        auto()
+    )
     surface_upward_heat_flux_in_air = auto()
     surface_upward_latent_heat_flux = auto()
-    surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_crop_harvesting = auto()
-    surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fires_excluding_anthropogenic_land_use_change = auto()
-    surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_grazing = auto()
-    surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_natural_sources = auto()
+    surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_crop_harvesting = (
+        auto()
+    )
+    surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fires_excluding_anthropogenic_land_use_change = (
+        auto()
+    )
+    surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_grazing = (
+        auto()
+    )
+    surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_natural_sources = (
+        auto()
+    )
     surface_upward_mole_flux_of_carbon_dioxide = auto()
     surface_upward_mole_flux_of_dimethyl_sulfide = auto()
     surface_upward_sensible_heat_flux = auto()
@@ -1659,8 +1778,12 @@ class StandardName(Enum):
     surface_upwelling_radiance_in_air_reflected_by_sea_water = auto()
     surface_upwelling_radiance_in_sea_water = auto()
     surface_upwelling_radiance_per_unit_wavelength_in_air = auto()
-    surface_upwelling_radiance_per_unit_wavelength_in_air_emerging_from_sea_water = auto()
-    surface_upwelling_radiance_per_unit_wavelength_in_air_reflected_by_sea_water = auto()
+    surface_upwelling_radiance_per_unit_wavelength_in_air_emerging_from_sea_water = (
+        auto()
+    )
+    surface_upwelling_radiance_per_unit_wavelength_in_air_reflected_by_sea_water = (
+        auto()
+    )
     surface_upwelling_radiance_per_unit_wavelength_in_sea_water = auto()
     surface_upwelling_radiative_flux_per_unit_wavelength_in_air = auto()
     surface_upwelling_radiative_flux_per_unit_wavelength_in_sea_water = auto()
@@ -1668,7 +1791,9 @@ class StandardName(Enum):
     surface_upwelling_shortwave_flux_in_air_assuming_clear_sky = auto()
     surface_water_amount = auto()
     temperature_difference_between_ambient_air_and_air_lifted_adiabatically = auto()
-    temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface = auto()
+    temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface = (
+        auto()
+    )
     temperature_flux_due_to_evaporation_expressed_as_heat_flux_out_of_sea_water = auto()
     temperature_flux_due_to_rainfall_expressed_as_heat_flux_into_sea_water = auto()
     temperature_flux_due_to_runoff_expressed_as_heat_flux_into_sea_water = auto()
@@ -1689,7 +1814,9 @@ class StandardName(Enum):
     tendency_of_air_temperature_due_to_radiative_heating = auto()
     tendency_of_air_temperature_due_to_shortwave_heating = auto()
     tendency_of_air_temperature_due_to_shortwave_heating_assuming_clear_sky = auto()
-    tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing = auto()
+    tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing = (
+        auto()
+    )
     tendency_of_air_temperature_due_to_stratiform_precipitation = auto()
     tendency_of_air_temperature_due_to_turbulence = auto()
     tendency_of_atmosphere_dry_energy_content = auto()
@@ -1698,85 +1825,225 @@ class StandardName(Enum):
     tendency_of_atmosphere_mass_content_of_acetic_acid_due_to_dry_deposition = auto()
     tendency_of_atmosphere_mass_content_of_acetic_acid_due_to_wet_deposition = auto()
     tendency_of_atmosphere_mass_content_of_aceto_nitrile_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_solvent_production_and_use = auto()
-    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_waste_treatment_and_disposal = auto()
-    tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_re_emission = auto()
-    tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_wet_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_solvent_production_and_use = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_emission = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_re_emission = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_wet_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_alpha_pinene_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_ammonia_due_to_dry_deposition = auto()
     tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_savanna_and_grassland_fires = auto()
+    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_ammonia_due_to_wet_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_due_to_wet_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_due_to_wet_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_benzene_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_beta_pinene_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_waste_treatment_and_disposal = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_gravitational_settling = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_turbulent_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_wet_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_gravitational_settling = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_turbulent_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_black_carbon_dry_aerosol_due_to_wet_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_butane_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_carbon_dioxide_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_emission = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fossil_fuel_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_emission = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fossil_fuel_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_solvent_production_and_use = auto()
-    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_solvent_production_and_use = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_carbon_tetrachloride_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_cfc113a_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_cfc113_due_to_emission = auto()
@@ -1784,84 +2051,220 @@ class StandardName(Enum):
     tendency_of_atmosphere_mass_content_of_cfc115_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_cfc11_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_cfc12_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_solvent_production_and_use = auto()
-    tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_waste_treatment_and_disposal = auto()
-    tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_solvent_production_and_use = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_wet_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_wet_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_gravitational_settling = auto()
-    tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_turbulent_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_wet_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_esters_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_esters_due_to_emission_from_solvent_production_and_use = auto()
-    tendency_of_atmosphere_mass_content_of_esters_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_gravitational_settling = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_turbulent_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_due_to_wet_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_esters_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_esters_due_to_emission_from_solvent_production_and_use = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_esters_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_ethane_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_ethanol_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_ethene_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_waste_treatment_and_disposal = auto()
-    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_solvent_production_and_use = auto()
-    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_solvent_production_and_use = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_dry_deposition = auto()
     tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_formic_acid_due_to_dry_deposition = auto()
     tendency_of_atmosphere_mass_content_of_formic_acid_due_to_wet_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_gaseous_divalent_mercury_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_gaseous_divalent_mercury_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_gaseous_divalent_mercury_due_to_wet_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_gaseous_elemental_mercury_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_gaseous_elemental_mercury_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_gaseous_elemental_mercury_due_to_wet_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_gaseous_divalent_mercury_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_gaseous_divalent_mercury_due_to_emission = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_gaseous_divalent_mercury_due_to_wet_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_gaseous_elemental_mercury_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_gaseous_elemental_mercury_due_to_emission = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_gaseous_elemental_mercury_due_to_wet_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_halon1202_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_halon1211_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_halon1301_due_to_emission = auto()
@@ -1870,213 +2273,557 @@ class StandardName(Enum):
     tendency_of_atmosphere_mass_content_of_hcfc141b_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_hcfc142b_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_hcfc22_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_re_emission = auto()
-    tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_wet_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_hydrogen_cyanide_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_re_emission = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_wet_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_hydrogen_cyanide_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_hydrogen_cyanide_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_hydrogen_peroxide_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_hydrogen_peroxide_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_isoprene_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_isoprene_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_isoprene_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_solvent_production_and_use = auto()
-    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_isoprene_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_isoprene_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_solvent_production_and_use = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_limonene_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_mercury_dry_aerosol_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_mercury_dry_aerosol_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_mercury_dry_aerosol_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_mercury_dry_aerosol_due_to_wet_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_mercury_dry_aerosol_due_to_wet_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_methane_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_methanol_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_methyl_bromide_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_methyl_chloride_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_molecular_hydrogen_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_molecular_hydrogen_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_molecular_hydrogen_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_molecular_hydrogen_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_molecular_hydrogen_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_molecular_hydrogen_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_molecular_hydrogen_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_nitric_acid_due_to_dry_deposition = auto()
     tendency_of_atmosphere_mass_content_of_nitric_acid_due_to_wet_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_dioxide_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_nitrogen_dioxide_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_nitrogen_dioxide_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_dioxide_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_dioxide_due_to_emission_from_savanna_and_grassland_fires = auto()
+    tendency_of_atmosphere_mass_content_of_nitrogen_dioxide_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nitrogen_dioxide_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_nitrous_acid_due_to_dry_deposition = auto()
     tendency_of_atmosphere_mass_content_of_nitrous_acid_due_to_emission = auto()
     tendency_of_atmosphere_mass_content_of_nitrous_oxide_due_to_dry_deposition = auto()
     tendency_of_atmosphere_mass_content_of_nitrous_oxide_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_solvent_production_and_use = auto()
-    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_waste_treatment_and_disposal = auto()
-    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_waste_treatment_and_disposal = auto()
-    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_solvent_production_and_use = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_due_to_emission = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_ozone_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_ozone_due_to_dry_deposition_into_stomata = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_due_to_gravitational_settling = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_due_to_net_chemical_production_and_emission = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_due_to_turbulent_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_due_to_wet_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_waste_treatment_and_disposal = auto()
-    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_waste_treatment_and_disposal = auto()
-    tendency_of_atmosphere_mass_content_of_peroxyacetyl_nitrate_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_peroxynitric_acid_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_due_to_wet_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_ozone_due_to_dry_deposition_into_stomata = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_due_to_gravitational_settling = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_due_to_net_chemical_production_and_emission = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_due_to_turbulent_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_due_to_wet_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_expressed_as_carbon_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_peroxyacetyl_nitrate_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_peroxynitric_acid_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_due_to_emission = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_due_to_wet_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_propane_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_propene_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_radon_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_gravitational_settling = auto()
-    tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_turbulent_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_wet_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_due_to_net_chemical_production = auto()
-    tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_due_to_wet_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_due_to_dry_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_gravitational_settling = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_turbulent_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_seasalt_dry_aerosol_due_to_wet_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_due_to_net_chemical_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_due_to_wet_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_due_to_dry_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_gravitational_settling = auto()
-    tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_turbulent_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_wet_deposition = auto()
+    tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_gravitational_settling = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_turbulent_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_wet_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_dry_deposition = auto()
     tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_wet_deposition = auto()
-    tendency_of_atmosphere_mass_content_of_terpenes_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_terpenes_due_to_emission_from_savanna_and_grassland_fires = auto()
+    tendency_of_atmosphere_mass_content_of_terpenes_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_terpenes_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_toluene_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_solvent_production_and_use = auto()
-    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_waste_treatment_and_disposal = auto()
-    tendency_of_atmosphere_mass_content_of_trimethylbenzene_due_to_emission_from_energy_production_and_distribution = auto()
+    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_solvent_production_and_use = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_trimethylbenzene_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_water_due_to_advection = auto()
     tendency_of_atmosphere_mass_content_of_water_vapor = auto()
     tendency_of_atmosphere_mass_content_of_water_vapor_due_to_advection = auto()
     tendency_of_atmosphere_mass_content_of_water_vapor_due_to_convection = auto()
     tendency_of_atmosphere_mass_content_of_water_vapor_due_to_deep_convection = auto()
-    tendency_of_atmosphere_mass_content_of_water_vapor_due_to_shallow_convection = auto()
+    tendency_of_atmosphere_mass_content_of_water_vapor_due_to_shallow_convection = (
+        auto()
+    )
     tendency_of_atmosphere_mass_content_of_water_vapor_due_to_turbulence = auto()
     tendency_of_atmosphere_mass_content_of_xylene_due_to_emission = auto()
-    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_agricultural_production = auto()
-    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_agricultural_waste_burning = auto()
-    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_energy_production_and_distribution = auto()
-    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_forest_fires = auto()
-    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_industrial_processes_and_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_land_transport = auto()
-    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_maritime_transport = auto()
-    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_residential_and_commercial_combustion = auto()
-    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_savanna_and_grassland_fires = auto()
-    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_solvent_production_and_use = auto()
-    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_waste_treatment_and_disposal = auto()
+    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_agricultural_production = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_agricultural_waste_burning = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_energy_production_and_distribution = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_forest_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_industrial_processes_and_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_land_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_maritime_transport = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_residential_and_commercial_combustion = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_savanna_and_grassland_fires = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_solvent_production_and_use = (
+        auto()
+    )
+    tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_waste_treatment_and_disposal = (
+        auto()
+    )
     tendency_of_atmosphere_mass_per_unit_area = auto()
     tendency_of_atmosphere_mass_per_unit_area_due_to_advection = auto()
     tendency_of_atmosphere_moles_of_acetic_acid = auto()
@@ -2170,10 +2917,18 @@ class StandardName(Enum):
     tendency_of_atmosphere_moles_of_toluene = auto()
     tendency_of_atmosphere_moles_of_water_vapor = auto()
     tendency_of_atmosphere_moles_of_xylene = auto()
-    tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_dry_deposition = auto()
-    tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_gravitational_settling = auto()
-    tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_turbulent_depostion = auto()
-    tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_wet_deposition = auto()
+    tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_dry_deposition = (
+        auto()
+    )
+    tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_gravitational_settling = (
+        auto()
+    )
+    tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_turbulent_depostion = (
+        auto()
+    )
+    tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_wet_deposition = (
+        auto()
+    )
     tendency_of_atmosphere_potential_energy_content_due_to_advection = auto()
     tendency_of_bedrock_altitude = auto()
     tendency_of_dry_energy_content_of_atmosphere_layer = auto()
@@ -2191,15 +2946,31 @@ class StandardName(Enum):
     tendency_of_global_average_sea_level_change = auto()
     tendency_of_kinetic_energy_content_of_atmosphere_layer_due_to_advection = auto()
     tendency_of_land_ice_thickness = auto()
-    tendency_of_mass_concentration_of_black_carbon_dry_aerosol_in_air_due_to_emission_from_aviation = auto()
-    tendency_of_mass_concentration_of_nitrogen_dioxide_in_air_due_to_emission_from_aviation = auto()
-    tendency_of_mass_concentration_of_nitrogen_monoxide_in_air_due_to_emission_from_aviation = auto()
-    tendency_of_mass_concentration_of_nox_expressed_as_nitrogen_monoxide_in_air_due_to_emission_from_aviation = auto()
+    tendency_of_mass_concentration_of_black_carbon_dry_aerosol_in_air_due_to_emission_from_aviation = (
+        auto()
+    )
+    tendency_of_mass_concentration_of_nitrogen_dioxide_in_air_due_to_emission_from_aviation = (
+        auto()
+    )
+    tendency_of_mass_concentration_of_nitrogen_monoxide_in_air_due_to_emission_from_aviation = (
+        auto()
+    )
+    tendency_of_mass_concentration_of_nox_expressed_as_nitrogen_monoxide_in_air_due_to_emission_from_aviation = (
+        auto()
+    )
     tendency_of_mass_content_of_water_vapor_in_atmosphere_layer = auto()
-    tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_convection = auto()
-    tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_deep_convection = auto()
-    tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_shallow_convection = auto()
-    tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_turbulence = auto()
+    tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_convection = (
+        auto()
+    )
+    tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_deep_convection = (
+        auto()
+    )
+    tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_shallow_convection = (
+        auto()
+    )
+    tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_turbulence = (
+        auto()
+    )
     tendency_of_mass_fraction_of_cloud_condensed_water_in_air = auto()
     tendency_of_mass_fraction_of_cloud_condensed_water_in_air_due_to_advection = auto()
     tendency_of_mass_fraction_of_cloud_ice_in_air = auto()
@@ -2209,78 +2980,200 @@ class StandardName(Enum):
     tendency_of_mass_fraction_of_cloud_liquid_water_in_air_due_to_advection = auto()
     tendency_of_mass_fraction_of_cloud_liquid_water_in_air_due_to_diffusion = auto()
     tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_advection = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_autoconversion_to_rain = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_autoconversion_to_snow = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_boundary_layer_mixing = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_cloud_microphysics = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_condensation_and_evaporation = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_icefall = auto()
+    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_advection = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_autoconversion_to_rain = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_autoconversion_to_snow = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_boundary_layer_mixing = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_cloud_microphysics = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_condensation_and_evaporation = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_icefall = (
+        auto()
+    )
     tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_accretion_to_snow = auto()
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_accretion_to_snow = (
+        auto()
+    )
     tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_advection = auto()
     tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_aggregation = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_bergeron_findeisen_process_from_cloud_liquid = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_boundary_layer_mixing = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_cloud_microphysics = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_convective_detrainment = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_deposition_and_sublimation = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_evaporation_of_melting_ice = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_heterogeneous_nucleation_from_cloud_liquid_water = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_heterogeneous_nucleation_from_water_vapor = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_homogeneous_nucleation = auto()
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_bergeron_findeisen_process_from_cloud_liquid = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_boundary_layer_mixing = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_cloud_microphysics = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_convective_detrainment = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_deposition_and_sublimation = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_evaporation_of_melting_ice = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_heterogeneous_nucleation_from_cloud_liquid_water = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_heterogeneous_nucleation_from_water_vapor = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_homogeneous_nucleation = (
+        auto()
+    )
     tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_icefall = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_melting_to_cloud_liquid_water = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_melting_to_rain = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_riming_from_cloud_liquid_water = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_riming_from_rain = auto()
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_melting_to_cloud_liquid_water = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_melting_to_rain = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_riming_from_cloud_liquid_water = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_riming_from_rain = (
+        auto()
+    )
     tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_accretion_to_rain = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_accretion_to_snow = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_advection = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_autoconversion = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_bergeron_findeisen_process_to_cloud_ice = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_boundary_layer_mixing = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_cloud_microphysics = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_boundary_layer_mixing = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_convection = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_longwave_heating = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_pressure_change = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_shortwave_heating = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_turbulence = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_convective_detrainment = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_heterogeneous_nucleation = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_homogeneous_nucleation = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_melting_from_cloud_ice = auto()
-    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_riming = auto()
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_accretion_to_rain = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_accretion_to_snow = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_advection = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_autoconversion = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_bergeron_findeisen_process_to_cloud_ice = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_boundary_layer_mixing = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_cloud_microphysics = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_boundary_layer_mixing = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_convection = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_longwave_heating = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_pressure_change = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_shortwave_heating = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_turbulence = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_convective_detrainment = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_heterogeneous_nucleation = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_homogeneous_nucleation = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_melting_from_cloud_ice = (
+        auto()
+    )
+    tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_riming = (
+        auto()
+    )
     tendency_of_middle_atmosphere_moles_of_carbon_monoxide = auto()
     tendency_of_middle_atmosphere_moles_of_hcc140a = auto()
     tendency_of_middle_atmosphere_moles_of_methane = auto()
     tendency_of_middle_atmosphere_moles_of_methyl_bromide = auto()
     tendency_of_middle_atmosphere_moles_of_methyl_chloride = auto()
     tendency_of_middle_atmosphere_moles_of_molecular_hydrogen = auto()
-    tendency_of_mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water_due_to_biological_production = auto()
-    tendency_of_mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water_due_to_dissolution = auto()
-    tendency_of_mole_concentration_of_calcite_expressed_as_carbon_in_sea_water_due_to_biological_production = auto()
-    tendency_of_mole_concentration_of_calcite_expressed_as_carbon_in_sea_water_due_to_dissolution = auto()
-    tendency_of_mole_concentration_of_dissolved_inorganic_carbon_in_sea_water_due_to_biological_processes = auto()
-    tendency_of_mole_concentration_of_dissolved_inorganic_iron_in_sea_water_due_to_biological_processes = auto()
-    tendency_of_mole_concentration_of_dissolved_inorganic_nitrogen_in_sea_water_due_to_biological_processes = auto()
-    tendency_of_mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water_due_to_biological_processes = auto()
-    tendency_of_mole_concentration_of_dissolved_inorganic_silicon_in_sea_water_due_to_biological_processes = auto()
-    tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_dissolution_from_inorganic_particles = auto()
-    tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_grazing_of_phytoplankton = auto()
-    tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_scavenging_by_inorganic_particles = auto()
-    tendency_of_mole_concentration_of_iron_in_sea_water_due_to_biological_production = auto()
-    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production = auto()
-    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_calcareous_phytoplankton = auto()
-    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diatoms = auto()
-    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diazotrophs = auto()
-    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_miscellaneous_phytoplankton = auto()
-    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_picophytoplankton = auto()
-    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_nitrate_utilization = auto()
-    tendency_of_mole_concentration_of_silicon_in_sea_water_due_to_biological_production = auto()
+    tendency_of_mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water_due_to_biological_production = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water_due_to_dissolution = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_calcite_expressed_as_carbon_in_sea_water_due_to_biological_production = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_calcite_expressed_as_carbon_in_sea_water_due_to_dissolution = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_dissolved_inorganic_carbon_in_sea_water_due_to_biological_processes = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_dissolved_inorganic_iron_in_sea_water_due_to_biological_processes = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_dissolved_inorganic_nitrogen_in_sea_water_due_to_biological_processes = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water_due_to_biological_processes = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_dissolved_inorganic_silicon_in_sea_water_due_to_biological_processes = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_dissolution_from_inorganic_particles = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_grazing_of_phytoplankton = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_scavenging_by_inorganic_particles = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_iron_in_sea_water_due_to_biological_production = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_calcareous_phytoplankton = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diatoms = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diazotrophs = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_miscellaneous_phytoplankton = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_picophytoplankton = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_nitrate_utilization = (
+        auto()
+    )
+    tendency_of_mole_concentration_of_silicon_in_sea_water_due_to_biological_production = (
+        auto()
+    )
     tendency_of_northward_wind = auto()
     tendency_of_northward_wind_due_to_advection = auto()
     tendency_of_northward_wind_due_to_convection = auto()
@@ -2288,25 +3181,47 @@ class StandardName(Enum):
     tendency_of_northward_wind_due_to_gravity_wave_drag = auto()
     tendency_of_ocean_barotropic_streamfunction = auto()
     tendency_of_ocean_eddy_kinetic_energy_content_due_to_bolus_transport = auto()
-    tendency_of_ocean_mole_content_of_aragonite_expressed_as_carbon_due_to_biological_production = auto()
-    tendency_of_ocean_mole_content_of_calcite_expressed_as_carbon_due_to_biological_production = auto()
-    tendency_of_ocean_mole_content_of_carbon_due_to_runoff_and_sediment_dissolution = auto()
+    tendency_of_ocean_mole_content_of_aragonite_expressed_as_carbon_due_to_biological_production = (
+        auto()
+    )
+    tendency_of_ocean_mole_content_of_calcite_expressed_as_carbon_due_to_biological_production = (
+        auto()
+    )
+    tendency_of_ocean_mole_content_of_carbon_due_to_runoff_and_sediment_dissolution = (
+        auto()
+    )
     tendency_of_ocean_mole_content_of_carbon_due_to_sedimentation = auto()
     tendency_of_ocean_mole_content_of_dissolved_inorganic_carbon = auto()
-    tendency_of_ocean_mole_content_of_dissolved_inorganic_carbon_due_to_biological_processes = auto()
+    tendency_of_ocean_mole_content_of_dissolved_inorganic_carbon_due_to_biological_processes = (
+        auto()
+    )
     tendency_of_ocean_mole_content_of_dissolved_inorganic_iron = auto()
-    tendency_of_ocean_mole_content_of_dissolved_inorganic_iron_due_to_biological_processes = auto()
+    tendency_of_ocean_mole_content_of_dissolved_inorganic_iron_due_to_biological_processes = (
+        auto()
+    )
     tendency_of_ocean_mole_content_of_dissolved_inorganic_nitrogen = auto()
-    tendency_of_ocean_mole_content_of_dissolved_inorganic_nitrogen_due_to_biological_processes = auto()
+    tendency_of_ocean_mole_content_of_dissolved_inorganic_nitrogen_due_to_biological_processes = (
+        auto()
+    )
     tendency_of_ocean_mole_content_of_dissolved_inorganic_phosphorus = auto()
-    tendency_of_ocean_mole_content_of_dissolved_inorganic_phosphorus_due_to_biological_processes = auto()
+    tendency_of_ocean_mole_content_of_dissolved_inorganic_phosphorus_due_to_biological_processes = (
+        auto()
+    )
     tendency_of_ocean_mole_content_of_dissolved_inorganic_silicon = auto()
-    tendency_of_ocean_mole_content_of_dissolved_inorganic_silicon_due_to_biological_processes = auto()
-    tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_denitrification_and_sedimentation = auto()
-    tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_deposition_and_fixation_and_runoff = auto()
+    tendency_of_ocean_mole_content_of_dissolved_inorganic_silicon_due_to_biological_processes = (
+        auto()
+    )
+    tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_denitrification_and_sedimentation = (
+        auto()
+    )
+    tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_deposition_and_fixation_and_runoff = (
+        auto()
+    )
     tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_fixation = auto()
     tendency_of_ocean_mole_content_of_iron_due_to_biological_production = auto()
-    tendency_of_ocean_mole_content_of_iron_due_to_deposition_and_runoff_and_sediment_dissolution = auto()
+    tendency_of_ocean_mole_content_of_iron_due_to_deposition_and_runoff_and_sediment_dissolution = (
+        auto()
+    )
     tendency_of_ocean_mole_content_of_iron_due_to_sedimentation = auto()
     tendency_of_ocean_mole_content_of_silicon_due_to_biological_production = auto()
     tendency_of_ocean_potential_energy_content = auto()
@@ -2327,7 +3242,9 @@ class StandardName(Enum):
     tendency_of_sea_ice_thickness_due_to_dynamics = auto()
     tendency_of_sea_ice_thickness_due_to_thermodynamics = auto()
     tendency_of_sea_surface_height_above_sea_level = auto()
-    tendency_of_sea_water_alkalinity_expressed_as_mole_equivalent_due_to_biological_processes = auto()
+    tendency_of_sea_water_alkalinity_expressed_as_mole_equivalent_due_to_biological_processes = (
+        auto()
+    )
     tendency_of_sea_water_salinity = auto()
     tendency_of_sea_water_salinity_due_to_advection = auto()
     tendency_of_sea_water_salinity_due_to_bolus_advection = auto()
@@ -2344,7 +3261,9 @@ class StandardName(Enum):
     tendency_of_specific_humidity_due_to_convection = auto()
     tendency_of_specific_humidity_due_to_diffusion = auto()
     tendency_of_specific_humidity_due_to_model_physics = auto()
-    tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing = auto()
+    tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing = (
+        auto()
+    )
     tendency_of_specific_humidity_due_to_stratiform_precipitation = auto()
     tendency_of_surface_air_pressure = auto()
     tendency_of_surface_snow_amount = auto()
@@ -2428,8 +3347,12 @@ class StandardName(Enum):
     troposphere_mole_content_of_sulfur_dioxide = auto()
     upward_air_velocity = auto()
     upward_dry_static_energy_flux_due_to_diffusion = auto()
-    upward_eastward_momentum_flux_in_air_due_to_nonorographic_eastward_gravity_waves = auto()
-    upward_eastward_momentum_flux_in_air_due_to_nonorographic_westward_gravity_waves = auto()
+    upward_eastward_momentum_flux_in_air_due_to_nonorographic_eastward_gravity_waves = (
+        auto()
+    )
+    upward_eastward_momentum_flux_in_air_due_to_nonorographic_westward_gravity_waves = (
+        auto()
+    )
     upward_eastward_momentum_flux_in_air_due_to_orographic_gravity_waves = auto()
     upward_eastward_stress_at_sea_ice_base = auto()
     upward_eliassen_palm_flux_in_air = auto()
@@ -2471,9 +3394,13 @@ class StandardName(Enum):
     virtual_temperature = auto()
     visibility_in_air = auto()
     volume_absorption_coefficient_of_radiative_flux_in_sea_water = auto()
-    volume_absorption_coefficient_of_radiative_flux_in_sea_water_due_to_dissolved_organic_matter = auto()
+    volume_absorption_coefficient_of_radiative_flux_in_sea_water_due_to_dissolved_organic_matter = (
+        auto()
+    )
     volume_attenuated_backwards_scattering_function_in_air = auto()
-    volume_attenuated_backwards_scattering_function_in_air_assuming_no_aerosol_or_cloud = auto()
+    volume_attenuated_backwards_scattering_function_in_air_assuming_no_aerosol_or_cloud = (
+        auto()
+    )
     volume_attenuation_coefficient_of_downwelling_radiative_flux_in_sea_water = auto()
     volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water = auto()
     volume_beam_attenuation_coefficient_of_radiative_flux_in_sea_water = auto()
