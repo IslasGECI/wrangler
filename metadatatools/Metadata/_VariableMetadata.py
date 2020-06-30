@@ -35,9 +35,7 @@ type = {self._type}
     @axis.setter
     def axis(self, axis):
         if not (isinstance(axis, Axis) or axis is None):
-            raise TypeError(
-                "Se espera que se le asigné un eje de la clase datatoos.Axis"
-            )
+            raise TypeError("Se espera que se le asigné un eje de la clase datatoos.Axis")
         self._axis = axis
 
     @property
@@ -87,9 +85,7 @@ type = {self._type}
     @standard_name.setter
     def standard_name(self, standard_name):
         if not (isinstance(standard_name, StandardName) or standard_name is None):
-            raise TypeError(
-                "Se espera que se le asigné un eje de la clase datatoos.StandardName"
-            )
+            raise TypeError("Se espera que se le asigné un eje de la clase datatoos.StandardName")
         self._standard_name = standard_name
 
     @property

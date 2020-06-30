@@ -18,9 +18,7 @@ class DatpackageModifier:
 
     def __init__(self, diccionario_datapackage):
         self._diccionario = copy.deepcopy(diccionario_datapackage)
-        self._resources = [
-            Resource(recurso) for recurso in self._diccionario["resources"]
-        ]
+        self._resources = [Resource(recurso) for recurso in self._diccionario["resources"]]
 
     @property
     def resources(self):

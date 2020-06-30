@@ -49,9 +49,7 @@ class DataTable:
 
     def add_variable_metadata(self, variable_metadata):
         if not isinstance(variable_metadata, VariableMetadata):
-            raise TypeError(
-                "Se espera un objeto de la clase datatoos.Metadatos.VariableMetadata"
-            )
+            raise TypeError("Se espera un objeto de la clase datatoos.Metadatos.VariableMetadata")
         self._metadatos_variables.append(variable_metadata)
 
     def get_variable_name_from_attribute(self):
