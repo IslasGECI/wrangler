@@ -1,7 +1,6 @@
 all: mutants
 
-repo = distdens
-codecov_token = eae768b1-8c32-40a8-89fd-6b7589f9efa8
+repo = metadatatools
 
 .PHONY: all clean format install lint mutants tests
 
@@ -32,4 +31,4 @@ tests: install
 	codecov --token=${codecov_token
 
 import: install
-	python -c "import datatools" && printf "\n\nÉXITO: Sí pude importar datatools\n\n" || { printf "\n\nERROR: No pude importar datatools\n\n"; exit 1; }
+	python -c "import metadatatools" && printf "\n\nÉXITO: Sí pude importar datatools\n\n" || { printf "\n\nERROR: No pude importar datatools\n\n"; exit 1; }
