@@ -8,7 +8,7 @@ clean:
 	rm --force .mutmut-cache
 	rm --recursive --force ${repo}.egg-info
 	rm --recursive --force ${repo}/__pycache__
-	rm --recursive --force test/__pycache__
+	rm --recursive --force tests/__pycache__
 
 format:
 	black --check --line-length 100 ${repo}
@@ -27,8 +27,7 @@ mutants:
 	mutmut run --paths-to-mutate ${repo}
 
 tests: install
-	pytest --cov=${repo} --cov-report=xml --verbose && \
-	codecov --token=${codecov_token
+	pytest --cov=${repo} --cov-report=xml --verbose
 
 import: install
 	python -c "import metadatatools" && printf "\n\nÉXITO: Sí pude importar datatools\n\n" || { printf "\n\nERROR: No pude importar datatools\n\n"; exit 1; }
