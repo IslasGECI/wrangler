@@ -2,6 +2,10 @@ all: mutants
 
 repo = metadatatools
 
+datapackageCapturaGatosSocorro = \
+	data/raw/erradicaciones-mamiferos/captura_gatos_socorro.csv \
+	data/raw/erradicaciones-mamiferos/datapackage.json
+
 .PHONY: all clean format install lint mutants tests
 
 clean:
@@ -26,8 +30,12 @@ lint:
 mutants:
 	mutmut run --paths-to-mutate ${repo}
 
-tests: install
+tests: install $(datapackageCapturaGatosSocorro)
 	pytest --cov=${repo} --cov-report=xml --verbose
 
 import: install
 	python -c "import metadatatools" && printf "\n\nÉXITO: Sí pude importar datatools\n\n" || { printf "\n\nERROR: No pude importar datatools\n\n"; exit 1; }
+
+$(datapackageCapturaGatosSocorro):
+	mkdir --parents $(@D)
+	descarga_datos $(@F) $(@D)

@@ -6,6 +6,7 @@ RUN pip install \
     black \
     codecov \
     flake8 \
+    git+https://github.com/IslasGECI/descarga_datos.git@v0.1.0-beta \
     git+https://git@github.com/islasgeci/geoambiental@v0.1.0 \
     mutmut \
     numpy \
