@@ -9,6 +9,7 @@ clean:
 	rm --force .mutmut-cache
 	rm --recursive --force ${repo}.egg-info
 	rm --recursive --force ${repo}/__pycache__
+	rm --recursive --force ${repo}/**/__pycache__
 	rm --recursive --force tests/__pycache__
 
 format:
