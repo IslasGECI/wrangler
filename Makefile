@@ -3,10 +3,6 @@ all: mutants
 repo = metadatatools
 codecov_token = 92c09c8a-f80e-4220-af6d-1b8bb79be8f1
 
-datapackageCapturaGatosSocorro = \
-	tests/data/erradicaciones-mamiferos/captura_gatos_socorro.csv \
-	tests/data/erradicaciones-mamiferos/datapackage.json
-
 .PHONY: all clean format install lint mutants tests
 
 clean:
@@ -14,7 +10,6 @@ clean:
 	rm --recursive --force ${repo}.egg-info
 	rm --recursive --force ${repo}/__pycache__
 	rm --recursive --force tests/__pycache__
-	rm --recursive --force tests/data
 
 format:
 	black --check --line-length 100 ${repo}
@@ -38,7 +33,3 @@ tests: install
 
 import: install
 	python -c "import metadatatools" && printf "\n\nÉXITO: Sí pude importar datatools\n\n" || { printf "\n\nERROR: No pude importar datatools\n\n"; exit 1; }
-
-$(datapackageCapturaGatosSocorro):
-	mkdir --parents $(@D)
-	descarga_datos $(@F) $(@D)
