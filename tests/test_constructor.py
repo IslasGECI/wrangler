@@ -1,5 +1,4 @@
 from Tablanal import DataTable
-import pytest
 import metadatatools as mdt
 
 
