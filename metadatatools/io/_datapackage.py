@@ -11,7 +11,7 @@ def import_tabular_data_resource(path: str):
     """
     Esta función te permite importar el recurso de un datapackage.
 
-    # Parámetros    
+    # Parámetros
 
     `path str`
     Dirección al recurso que quieres importar
