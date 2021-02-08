@@ -5,7 +5,9 @@ class IResourceMetadata(ABC):
     @property
     @abstractmethod
     def id(self):
-        "Igual que name pero sin “.”, “-“ ni “_”"
+        """
+        Igual que name pero sin “.”, “-“ ni “_”
+        """
         pass
 
     @property
@@ -16,7 +18,9 @@ class IResourceMetadata(ABC):
     @description.setter
     @abstractmethod
     def description(self, descripcion: str):
-        "Descripción de la variable"
+        """
+        Descripción de la variable
+        """
         pass
 
     @property
@@ -27,7 +31,9 @@ class IResourceMetadata(ABC):
     @name.setter
     @abstractmethod
     def name(self, name: str):
-        "Nombre del paquete, este debe ser corto y que se pueda usar para construir un url"
+        """
+        Nombre del paquete, este debe ser corto y que se pueda usar para construir un url
+        """
         pass
 
     @property
@@ -38,7 +44,9 @@ class IResourceMetadata(ABC):
     @path.setter
     @abstractmethod
     def path(self, path: str):
-        "Dirección del archivo en el disco duro"
+        """
+        Dirección del archivo en el disco duro
+        """
         pass
 
     @property
@@ -49,7 +57,9 @@ class IResourceMetadata(ABC):
     @profile.setter
     @abstractmethod
     def profile(self, profile: str):
-        "Tipo de datapackage"
+        """
+        Tipo de datapackage
+        """
         pass
 
     @property
@@ -60,7 +70,9 @@ class IResourceMetadata(ABC):
     @source.setter
     @abstractmethod
     def source(self, source: str):
-        "Descripción sobre el origen de los datos"
+        """
+        Descripción sobre el origen de los datos
+        """
         pass
 
     @property
@@ -71,7 +83,9 @@ class IResourceMetadata(ABC):
     @title.setter
     @abstractmethod
     def title(self, title: str):
-        "Título en inglés de la tabla de datos"
+        """
+        Título en inglés de la tabla de datos
+        """
         pass
 
     @property
@@ -82,5 +96,7 @@ class IResourceMetadata(ABC):
     @titulo.setter
     @abstractmethod
     def titulo(self, titulo: str):
-        "Título en español de la tabla de datos"
+        """
+        Título en español de la tabla de datos
+        """
         pass
