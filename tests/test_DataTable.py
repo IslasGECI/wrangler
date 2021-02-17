@@ -18,5 +18,5 @@ def test_get_variable_name_from_standard_name():
 def test_get_value():
     nombre_capturas: str = "capturas"
     obtained_catches: np.array = np.array(DatosSocorro.get_value(nombre_capturas))
-    expected_catches: np.array = np.array()
+    expected_catches: np.array = np.array([51, 31, 33, 21, 10])
     assert expected_name == obtained_catches
