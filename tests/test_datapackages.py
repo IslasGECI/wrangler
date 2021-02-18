@@ -8,6 +8,7 @@ def test_Field():
     name_obtained = Campo.name
     assert name_expected == name_obtained
 
+
 def test_Field_add_property():
     diccionario = {"name": "Nombre"}
     Campo = mdt.Field(diccionario)
