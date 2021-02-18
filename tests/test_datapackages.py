@@ -1,17 +1,17 @@
 import metadatatools as mdt
 
 
+diccionario = {"name": "Nombre"}
+Campo = mdt.Field(diccionario)
+
+
 def test_Field():
-    diccionario = {"name": "Nombre"}
-    Campo = mdt.Field(diccionario)
     name_expected = diccionario["name"]
     name_obtained = Campo.name
     assert name_expected == name_obtained
 
 
 def test_Field_add_property():
-    diccionario = {"name": "Nombre"}
-    Campo = mdt.Field(diccionario)
     expected_value = 0
     name_property = "new_property"
     Campo.add_property(name_property, expected_value)
