@@ -5,7 +5,7 @@ class Field:
 
     def __init__(self, diccionario_field):
         self._diccionario = diccionario_field
-        self._name = diccionario_field["name"]
+        self._name = self._diccionario["name"]
 
     @property
     def name(self):
