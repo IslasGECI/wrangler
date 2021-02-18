@@ -38,5 +38,3 @@ class Field:
         # modificación
         if name in self._diccionario:
             self._diccionario[name] = value
-        else:
-            self._diccionario[name] = value
