@@ -29,9 +29,12 @@ lint:
 mutants:
 	mutmut run --paths-to-mutate ${repo}
 
-tests: install
+coverage: install
 	pytest --cov=${repo} --cov-report=xml --verbose && \
 	codecov --token=${codecov_token}
+
+tests: install
+	pytest --verbose
 
 import: install
 	python -c "import metadatatools" && printf "\n\nÉXITO: Sí pude importar datatools\n\n" || { printf "\n\nERROR: No pude importar datatools\n\n"; exit 1; }
