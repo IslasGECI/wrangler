@@ -13,13 +13,9 @@ clean:
 	rm --recursive --force Tablanal/__pycache__
 	rm --recursive --force tests/__pycache__
 
-check:
+format:
 	black --check --line-length 100 ${repo}
 	black --check --line-length 100 tests
-
-format:
-	black --line-length 100 ${repo}
-	black --line-length 100 tests
 
 install:
 	pip install --editable .

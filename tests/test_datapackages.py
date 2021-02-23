@@ -19,7 +19,6 @@ def test_Field_add_property():
     obtained_value = dict_field[name_property]
     assert expected_value == obtained_value
 
-
 def test_Field_modify_property():
     expected_value = 2
     name_property = "new_property"
