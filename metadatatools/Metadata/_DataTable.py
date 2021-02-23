@@ -49,7 +49,7 @@ class DataTable:
 
     def add_variable_metadata(self, variable_metadata):
         if not isinstance(variable_metadata, VariableMetadata):
-            raise TypeError("Se espera un objeto de la clase datatoos.Metadatos.VariableMetadata")
+            raise TypeError("Se espera un objeto de la clase datatools.Metadatos.VariableMetadata")
         self._metadatos_variables.append(variable_metadata)
 
     def get_variable_name_from_attribute(self):
@@ -57,7 +57,7 @@ class DataTable:
 
     def get_variable_name_from_axis(self, axis: Axis):
         if not isinstance(axis, Axis):
-            raise TypeError("Se espera un objeto de la clase datatoos.Axis")
+            raise TypeError("Se espera un objeto de la clase datatools.Axis")
         for variable in self._metadatos_variables:
             if axis == variable.axis:
                 return variable.name
@@ -65,7 +65,7 @@ class DataTable:
 
     def get_variable_name_from_standard_name(self, standard_name: Axis):
         if not isinstance(standard_name, StandardName):
-            raise TypeError("Se espera un objeto de la clase datatoos.StandardName")
+            raise TypeError("Se espera un objeto de la clase datatools.StandardName")
         for variable in self._metadatos_variables:
             if standard_name == variable.standard_name:
                 return variable.name
