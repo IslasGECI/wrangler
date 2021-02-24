@@ -26,7 +26,8 @@
                         "description": "Indica la cantidad de trampas por noche utilizadas para la erradicación",
                         "long_name": "Effort",
                         "nombre_largo": "Esfuerzo",
-                        "standard_name": "effort"
+                        "standard_name": "effort",
+                        "units": ""
                     },
                     {
                         "axis": "",
@@ -39,7 +40,8 @@
                         "description": "Indica la cantidad de capturas de gatos realizadas hasta la fecha indicada",
                         "long_name": "Cat catchs",
                         "nombre_largo": "Capturas de gatos",
-                        "standard_name": ""
+                        "standard_name": "catches",
+                        "units": ""
                     },
                     {
                         "name": "Fecha",
@@ -52,7 +54,8 @@
                         "long_name": "Fecha",
                         "nombre_largo": "Date", 
                         "axis": "T",
-                        "standard_name": ""
+                        "standard_name": "date",
+                        "units": ""
                     }
                 ],
                 "missingValues": [
