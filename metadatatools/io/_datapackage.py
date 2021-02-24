@@ -52,6 +52,8 @@ def add_variable_metadata(data_table, diccionario_metadatos_variables):
         metadatos_variable.long_name = diccionario_metadatos_variable.get("long_name", "")
         metadatos_variable.description = diccionario_metadatos_variable.get("description", "")
         metadatos_variable.nombre_largo = diccionario_metadatos_variable.get("nombre_largo", "")
+        metadatos_variable.axis = diccionario_metadatos_variable.get("axis", "")
+        metadatos_variable.standard_name = diccionario_metadatos_variable.get("standard_name", "")
         metadatos_variable.units = diccionario_metadatos_variable.get("units", "")
         metadatos_variable.type = diccionario_metadatos_variable.get("type", "")
         data_table.add_variable_metadata(metadatos_variable)
