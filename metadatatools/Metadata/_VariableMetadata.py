@@ -84,8 +84,6 @@ type = {self._type}
 
     @standard_name.setter
     def standard_name(self, standard_name):
-        if not (isinstance(standard_name, StandardName) or standard_name is None):
-            raise TypeError("Se espera que se le asigne un eje de la clase datatools.StandardName")
         self._standard_name = standard_name
 
     @property

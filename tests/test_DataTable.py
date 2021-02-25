@@ -7,9 +7,9 @@ file_dtp_path: str = "tests/data/erradicaciones-mamiferos/captura_gatos_socorro.
 DatosSocorro = mdt.import_tabular_data_resource(file_dtp_path)
 
 
-@pytest.mark.skip(reason="no way of currently testing this")
+#@pytest.mark.skip(reason="no way of currently testing this")
 def test_get_variable_name_from_standard_name():
-    expected_name: str = "esfuerzo"
+    expected_name: str = "Esfuerzo"
     obtained_name: str = DatosSocorro.get_variable_name_from_standard_name(mdt.StandardName.effort)
     assert expected_name == obtained_name
 

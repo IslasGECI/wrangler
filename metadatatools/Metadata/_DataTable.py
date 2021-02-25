@@ -63,11 +63,11 @@ class DataTable:
                 return variable.name
         return None
 
-    def get_variable_name_from_standard_name(self, standard_name: Axis):
+    def get_variable_name_from_standard_name(self, standard_name: StandardName):
         if not isinstance(standard_name, StandardName):
             raise TypeError("Se espera un objeto de la clase datatools.StandardName")
         for variable in self._metadatos_variables:
-            if standard_name == variable.standard_name:
+            if standard_name.name == variable.standard_name:
                 return variable.name
         return None
 
