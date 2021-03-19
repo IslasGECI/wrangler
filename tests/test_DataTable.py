@@ -1,6 +1,4 @@
 import numpy as np
-import pytest
-from Tablanal import DataTable
 import metadatatools as mdt
 
 file_dtp_path: str = "tests/data/erradicaciones-mamiferos/captura_gatos_socorro.csv"
