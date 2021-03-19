@@ -3,6 +3,7 @@ import metadatatools as mdt
 
 diccionario = {"name": "Nombre"}
 Field = mdt.Field(diccionario)
+name_property = "new_property"
 
 
 def test_Field():
@@ -13,17 +14,17 @@ def test_Field():
 
 def test_Field_add_property():
     expected_value = 0
-    name_property = "new_property"
     Field.add_property(name_property, expected_value)
-    dictionary_field = Field.get_dict()
-    obtained_value = dictionary_field[name_property]
-    assert expected_value == obtained_value
+    assert_expected_value(expected_value)
 
 
 def test_Field_modify_property():
     expected_value = 2
-    name_property = "new_property"
     Field.modify_property(name_property, expected_value)
+    assert_expected_value(expected_value)
+
+
+def assert_expected_value(expected_value):
     dictionary_field = Field.get_dict()
     obtained_value = dictionary_field[name_property]
     assert expected_value == obtained_value
