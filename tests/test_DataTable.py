@@ -42,6 +42,8 @@ def test_Resource_Metadata():
     assert expected_resource_metadata.path == "tests/data/erradicaciones-mamiferos"
     assert expected_resource_metadata.title == "Effort and catch of cats on Socorro island"
     assert expected_resource_metadata.titulo == "Esfuerzo y capturas de gatos en isla Socorro"
+    assert expected_resource_metadata.description == ""
+    assert expected_resource_metadata.source == ""
 
 
 def test_Varible_Metadata():
@@ -54,3 +56,5 @@ def test_Varible_Metadata():
     assert expected_variables_metadata[0].nombre_largo == "Esfuerzo"
     assert expected_variables_metadata[0].standard_name == "effort"
     assert expected_variables_metadata[0].type == "integer"
+    assert expected_variables_metadata[1].long_name == "Cat catchs"
+    assert expected_variables_metadata[1].units == ""
