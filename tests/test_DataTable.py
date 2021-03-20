@@ -58,3 +58,13 @@ def test_Varible_Metadata():
     assert expected_variables_metadata[0].type == "integer"
     assert expected_variables_metadata[1].long_name == "Cat catchs"
     assert expected_variables_metadata[1].units == ""
+
+
+def test_where():
+    index = [True, False, False, False, False]
+    FilteredSocorroData: np.array = SocorroData.where(index)
+    column_name: str = "Capturas"
+    obtained_catches: np.array = np.array(FilteredSocorroData.get_value(column_name))
+    expected_catches: np.array = np.array([51])
+    are_equal = (expected_catches == obtained_catches).all()
+    assert are_equal
