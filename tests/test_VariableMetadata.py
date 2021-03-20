@@ -2,6 +2,7 @@ import metadatatools as mdt
 
 VariableMetadata = mdt.Metadata._VariableMetadata.VariableMetadata()
 
+
 def test_init_():
     assert VariableMetadata.axis == None
     assert VariableMetadata.description == None

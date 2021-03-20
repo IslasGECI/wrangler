@@ -2,6 +2,7 @@ import metadatatools as mdt
 
 ResourceMetadata = mdt.Metadata._ResourceMetadata.ResourceMetadata()
 
+
 def test_init_():
     assert ResourceMetadata.id == None
     assert ResourceMetadata.description == None
