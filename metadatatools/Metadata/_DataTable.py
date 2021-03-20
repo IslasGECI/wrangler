@@ -59,7 +59,7 @@ class DataTable:
         if not isinstance(axis, Axis):
             raise TypeError("Se espera un objeto de la clase datatools.Axis")
         for variable in self._metadatos_variables:
-            if axis == variable.axis:
+            if axis.name == variable.axis:
                 return variable.name
         return None
 

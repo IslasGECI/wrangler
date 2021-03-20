@@ -34,8 +34,6 @@ type = {self._type}
 
     @axis.setter
     def axis(self, axis):
-        if not (isinstance(axis, Axis) or axis is None):
-            raise TypeError("Se espera que se le asigne un eje de la clase datatools.Axis")
         self._axis = axis
 
     @property
