@@ -11,6 +11,12 @@ def test_get_variable_name_from_standard_name():
     assert expected_name == obtained_name
 
 
+def test_get_variable_name_from_axis():
+    expected_name: str = "Fecha"
+    obtained_name: str = SocorroData.get_variable_name_from_axis(mdt.Axis.T)
+    assert expected_name == obtained_name
+
+
 def test_get_value():
     column_name: str = "Capturas"
     obtained_catches: np.array = np.array(SocorroData.get_value(column_name))
