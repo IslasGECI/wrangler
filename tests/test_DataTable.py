@@ -26,6 +26,7 @@ def test_add_variable_metadata():
     with pytest.raises(TypeError, match=r"Se espera un objeto de la clase*"):
         obtained_name: str = SocorroData.add_variable_metadata("Hola")
 
+
 def test_get_value():
     column_name: str = "Capturas"
     obtained_catches: np.array = np.array(SocorroData.get_value(column_name))
