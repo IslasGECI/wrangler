@@ -33,3 +33,12 @@ def test_get_value():
     expected_catches: np.array = np.array([51, 31, 33, 21, 10])
     are_equal = (expected_catches == obtained_catches).all()
     assert are_equal
+
+
+def test_Resource_Metadata():
+    expected_resource_metadata = SocorroData.metadatos
+    assert "captura_gatos_socorro" == expected_resource_metadata.name
+    assert "capturagatossocorro" == expected_resource_metadata.id
+    assert expected_resource_metadata.path == "tests/data/erradicaciones-mamiferos"
+    assert expected_resource_metadata.title == "Effort and catch of cats on Socorro island"
+    assert expected_resource_metadata.titulo == "Esfuerzo y capturas de gatos en isla Socorro"
