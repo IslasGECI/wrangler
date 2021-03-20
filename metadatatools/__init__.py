@@ -7,5 +7,3 @@ from ._StandardName import StandardName
 from .Metadata import ResourceMetadata
 from .Metadata import IResourceMetadata
 from .io import import_tabular_data_resource
-from .datapackage import DatpackageModifier
-from .datapackage import Field
