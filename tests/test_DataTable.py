@@ -1,6 +1,8 @@
 import numpy as np
 import metadatatools as mdt
 import pytest
+import pandas as pd
+from pandas._testing import assert_frame_equal
 
 file_dtp_path: str = "tests/data/erradicaciones-mamiferos/captura_gatos_socorro.csv"
 SocorroData = mdt.import_tabular_data_resource(file_dtp_path)
@@ -68,3 +70,12 @@ def test_where():
     expected_catches: np.array = np.array([51])
     are_equal = (expected_catches == obtained_catches).all()
     assert are_equal
+
+
+def test_where_copy():
+    index = [True, False, False, False, False]
+    dataframe_expected = pd.DataFrame([1,2,3,4,5])
+    SocorroData.datos = dataframe_expected
+    FilteredSocorroData: np.array = SocorroData.where(index)
+    FilteredSocorroData.datos = [1,2,3]
+    assert_frame_equal(SocorroData._datos, dataframe_expected)
