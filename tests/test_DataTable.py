@@ -74,8 +74,8 @@ def test_where():
 
 def test_where_copy():
     index = [True, False, False, False, False]
-    dataframe_expected = pd.DataFrame([1,2,3,4,5])
+    dataframe_expected = pd.DataFrame([1, 2, 3, 4, 5])
     SocorroData.datos = dataframe_expected
     FilteredSocorroData: np.array = SocorroData.where(index)
-    FilteredSocorroData.datos = [1,2,3]
+    FilteredSocorroData.datos = [1, 2, 3]
     assert_frame_equal(SocorroData._datos, dataframe_expected)
