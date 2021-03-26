@@ -15,7 +15,7 @@ class DataTable:
 
     def where(self, funcion_filtrado):
         datos_filtrados = DataTable()
-        datos_filtrados._datos = self._datos.copy(deep=True)
+        datos_filtrados._datos = self._datos.copy()
         datos_filtrados._datos = datos_filtrados._datos[funcion_filtrado]
         datos_filtrados._metadatos = copy.deepcopy(self._metadatos)
         datos_filtrados._metadatos_variables = copy.deepcopy(self._metadatos_variables)
