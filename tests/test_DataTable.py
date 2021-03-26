@@ -70,5 +70,3 @@ def test_where():
     expected_catches: np.array = np.array([51])
     are_equal = (expected_catches == obtained_catches).all()
     assert are_equal
-
-
