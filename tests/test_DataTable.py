@@ -4,6 +4,7 @@ import pytest
 import pandas as pd
 from pandas._testing import assert_frame_equal
 
+
 file_dtp_path: str = "tests/data/erradicaciones-mamiferos/captura_gatos_socorro.csv"
 SocorroData = mdt.import_tabular_data_resource(file_dtp_path)
 
@@ -70,3 +71,9 @@ def test_where():
     expected_catches: np.array = np.array([51])
     are_equal = (expected_catches == obtained_catches).all()
     assert are_equal
+
+
+def test_init():
+    data = mdt.Metadata.DataTable()
+    assert data.datos == None
+    assert data.metadatos == None
