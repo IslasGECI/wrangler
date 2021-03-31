@@ -8,8 +8,10 @@ from pandas._testing import assert_frame_equal
 file_dtp_path: str = "tests/data/erradicaciones-mamiferos/captura_gatos_socorro.csv"
 SocorroData = mdt.import_tabular_data_resource(file_dtp_path)
 
+
 def test_repr():
     assert "renglones" in repr(SocorroData)
+
 
 def test_get_variable_name_from_standard_name():
     expected_name: str = "Esfuerzo"
