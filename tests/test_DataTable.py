@@ -1,8 +1,6 @@
 import numpy as np
 import metadatatools as mdt
 import pytest
-import pandas as pd
-from pandas._testing import assert_frame_equal
 
 
 file_dtp_path: str = "tests/data/erradicaciones-mamiferos/captura_gatos_socorro.csv"
@@ -31,7 +29,7 @@ def test_get_variable_name_from_axis():
 
 def test_add_variable_metadata():
     with pytest.raises(TypeError, match=r"^Se espera un objeto de la clase"):
-        obtained_name: str = SocorroData.add_variable_metadata("Hola")
+        SocorroData.add_variable_metadata("Hola")
 
 
 def test_get_value():
@@ -79,5 +77,5 @@ def test_where():
 
 def test_init():
     data = mdt.Metadata.DataTable()
-    assert data.datos == None
-    assert data.metadatos == None
+    assert data.datos is None
+    assert data.metadatos is None
