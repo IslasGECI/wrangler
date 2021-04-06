@@ -79,3 +79,11 @@ def test_init():
     data = mdt.Metadata.DataTable()
     assert data.datos is None
     assert data.metadatos is None
+
+def test_apply():
+    SocorroData.apply(lambda x: x + 1, "Capturas")
+    column_name: str = "Capturas"
+    obtained_catches: np.array = np.array(SocorroData.get_value(column_name))
+    expected_catches: np.array = np.array([51, 31, 33, 21, 10]) + 1
+    are_equal = (expected_catches == obtained_catches).all()
+    assert are_equal
