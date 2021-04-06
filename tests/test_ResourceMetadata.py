@@ -12,3 +12,9 @@ def test_init_():
     assert ResourceMetadata.source == None
     assert ResourceMetadata.title == None
     assert ResourceMetadata.titulo == None
+
+def test_properties():
+    ResourceMetadata.profile = "Nombre"
+    assert ResourceMetadata.profile == "Nombre"
+    ResourceMetadata.name = "Nombre-12.56"
+    assert ResourceMetadata.id == "Nombre1256"
