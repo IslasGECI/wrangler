@@ -4,14 +4,14 @@ ResourceMetadata = mdt.Metadata._ResourceMetadata.ResourceMetadata()
 
 
 def test_init_():
-    assert ResourceMetadata.id == None
-    assert ResourceMetadata.description == None
-    assert ResourceMetadata.name == None
-    assert ResourceMetadata.path == None
-    assert ResourceMetadata.profile == None
-    assert ResourceMetadata.source == None
-    assert ResourceMetadata.title == None
-    assert ResourceMetadata.titulo == None
+    assert ResourceMetadata.id is None
+    assert ResourceMetadata.description is None
+    assert ResourceMetadata.name is None
+    assert ResourceMetadata.path is None
+    assert ResourceMetadata.profile is None
+    assert ResourceMetadata.source is None
+    assert ResourceMetadata.title is None
+    assert ResourceMetadata.titulo is None
 
 
 def test_properties():

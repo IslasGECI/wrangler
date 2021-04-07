@@ -5,7 +5,7 @@ Variable = mdt.Metadata.DataVariable()
 
 
 def test_init():
-    assert Variable._datos == None
+    assert Variable._datos is None
     variable_metadata = Variable.get_variable_metadata()
     class_variable_metadata = mdt.Metadata._VariableMetadata.VariableMetadata
     assert isinstance(variable_metadata, class_variable_metadata)
@@ -13,4 +13,4 @@ def test_init():
 
 def test_IDataVariable():
     with pytest.raises(TypeError, match=r"abstract methods get_variable_metadata$"):
-        DataVariable = mdt.Metadata.IDataVariable()
+        mdt.Metadata.IDataVariable()
