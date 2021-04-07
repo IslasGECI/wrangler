@@ -80,6 +80,7 @@ def test_init():
     assert data.datos is None
     assert data.metadatos is None
 
+
 def test_apply():
     SocorroData.apply(lambda x: x + 1, "Capturas")
     column_name: str = "Capturas"
