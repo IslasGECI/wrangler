@@ -6,19 +6,14 @@
     "resources": [
         {
             "path": "captura_gatos_socorro.csv",
-            "profile": "tabular-data-resource",
-            "name": "captura_gatos_socorro",
-            "description": "descripcion captura_gatos_socorro",
             "format": "csv",
             "mediatype": "text/csv",
             "encoding": "utf-8",
-            "title": "Effort and catch of cats on Socorro island",
-            "titulo": "Esfuerzo y capturas de gatos en isla Socorro",
+            "sources": "fuente",
             "schema": {
                 "fields": [
                     {
                         "axis": "",
-                        "name": "Esfuerzo",
                         "type": "integer",
                         "format": "default",
                         "constraints": {
@@ -41,7 +36,7 @@
                         "long_name": "Cat catchs",
                         "nombre_largo": "Capturas de gatos",
                         "standard_name": "catches",
-                        "units": ""
+                        "units": "cats"
                     },
                     {
                         "name": "Fecha",

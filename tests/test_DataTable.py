@@ -47,7 +47,7 @@ def test_Resource_Metadata():
     assert expected_resource_metadata.path == "tests/data/erradicaciones-mamiferos"
     assert expected_resource_metadata.title == "Effort and catch of cats on Socorro island"
     assert expected_resource_metadata.titulo == "Esfuerzo y capturas de gatos en isla Socorro"
-    assert expected_resource_metadata.description == ""
+    assert expected_resource_metadata.description == "descripcion captura_gatos_socorro"
     assert expected_resource_metadata.source == ""
 
 
