@@ -22,12 +22,14 @@ def test_properties():
     assert ResourceMetadata.id == "Nombre1256"
     ResourceMetadata.path = "Hola"
     assert ResourceMetadata._path == "Hola"
+    ResourceMetadata.description = "Descripcion"
+    assert ResourceMetadata._description == "Descripcion"
 
 
 def test_IResourceMetadata():
     with pytest.raises(
         TypeError,
-        match=r"abstract methods description, get_name, get_path, id, name, path, profile, set_name, set_path, source, title, titulo$",
+        match=r"abstract methods description, get_description, get_name, get_path, id, name, path, profile, set_description, set_name, set_path, source, title, titulo$",
     ):
         mdt.Metadata.IResourceMetadata()
 

@@ -35,13 +35,13 @@ titulo = {self._titulo}
     def id(self):
         return self._id
 
-    @property
-    def description(self):
+    def get_description(self):
         return self._description
 
-    @description.setter
-    def description(self, description):
+    def set_description(self, description):
         self._description = description
+
+    description = property(get_description, set_description)
 
     def get_name(self):
         return self._name

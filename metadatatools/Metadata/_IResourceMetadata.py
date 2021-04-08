@@ -10,18 +10,18 @@ class IResourceMetadata(ABC):
         """
         pass
 
-    @property
     @abstractmethod
-    def description(self):
+    def get_description(self):
         pass
 
-    @description.setter
     @abstractmethod
-    def description(self, descripcion: str):
+    def set_description(self, descripcion: str):
         """
         Descripción de la variable
         """
         pass
+
+    description = property(get_description, set_description)
 
     @abstractmethod
     def get_name(self):
