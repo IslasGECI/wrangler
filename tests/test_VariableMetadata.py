@@ -1,5 +1,4 @@
 import metadatatools as mdt
-import pytest
 
 VariableMetadata = mdt.Metadata._VariableMetadata.VariableMetadata()
 
