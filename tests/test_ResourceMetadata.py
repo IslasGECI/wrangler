@@ -16,20 +16,26 @@ def test_init_():
 
 
 def test_properties():
-    ResourceMetadata.profile = "Nombre"
-    assert ResourceMetadata.profile == "Nombre"
+    ResourceMetadata.profile = "Profile"
+    assert ResourceMetadata._profile == "Profile"
     ResourceMetadata.name = "Nombre-12.56"
     assert ResourceMetadata.id == "Nombre1256"
-    ResourceMetadata.path = "Hola"
-    assert ResourceMetadata._path == "Hola"
+    ResourceMetadata.path = "Path"
+    assert ResourceMetadata._path == "Path"
     ResourceMetadata.description = "Descripcion"
     assert ResourceMetadata._description == "Descripcion"
+    ResourceMetadata.source = "Source"
+    assert ResourceMetadata._source == "Source"
+    ResourceMetadata.title = "Title"
+    assert ResourceMetadata._title == "Title"
+    ResourceMetadata.titulo = "Titulo"
+    assert ResourceMetadata._titulo == "Titulo"
 
 
 def test_IResourceMetadata():
     with pytest.raises(
         TypeError,
-        match=r"abstract methods description, get_description, get_name, get_path, id, name, path, profile, set_description, set_name, set_path, source, title, titulo$",
+        match=r"abstract methods description, get_description, get_name, get_path, get_profile, get_source, get_title, get_titulo, id, name, path, profile, set_description, set_name, set_path, set_profile, set_source, set_title, set_titulo, source, title, titulo$",
     ):
         mdt.Metadata.IResourceMetadata()
 

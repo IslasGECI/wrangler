@@ -60,37 +60,37 @@ titulo = {self._titulo}
 
     path = property(get_path, set_path)
 
-    @property
-    def profile(self):
+    def get_profile(self):
         return self._profile
 
-    @profile.setter
-    def profile(self, profile):
+    def set_profile(self, profile):
         self._profile = profile
 
-    @property
-    def source(self):
+    profile = property(get_profile, set_profile)
+
+    def get_source(self):
         return self._source
 
-    @source.setter
-    def source(self, source):
+    def set_source(self, source):
         self._source = source
 
-    @property
-    def title(self):
+    source = property(get_source, set_source)
+
+    def get_title(self):
         return self._title
 
-    @title.setter
-    def title(self, title):
+    def set_title(self, title):
         self._title = title
 
-    @property
-    def titulo(self):
+    title = property(get_title, set_title)
+
+    def get_titulo(self):
         return self._titulo
 
-    @titulo.setter
-    def titulo(self, titulo):
+    def set_titulo(self, titulo):
         self._titulo = titulo
+
+    titulo = property(get_titulo, set_titulo)
 
     def _create_id(self, name: str):
         """

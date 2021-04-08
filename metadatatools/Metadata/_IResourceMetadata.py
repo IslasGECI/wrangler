@@ -49,54 +49,54 @@ class IResourceMetadata(ABC):
 
     path = property(get_path, set_path)
 
-    @property
     @abstractmethod
-    def profile(self):
+    def get_profile(self):
         pass
 
-    @profile.setter
     @abstractmethod
-    def profile(self, profile: str):
+    def set_profile(self, profile: str):
         """
         Tipo de datapackage
         """
         pass
 
-    @property
+    profile = property(get_profile, set_profile)
+
     @abstractmethod
-    def source(self):
+    def get_source(self):
         pass
 
-    @source.setter
     @abstractmethod
-    def source(self, source: str):
+    def set_source(self, source: str):
         """
         Descripción sobre el origen de los datos
         """
         pass
 
-    @property
+    source = property(get_source, set_source)
+
     @abstractmethod
-    def title(self):
+    def get_title(self):
         pass
 
-    @title.setter
     @abstractmethod
-    def title(self, title: str):
+    def set_title(self, title: str):
         """
         Título en inglés de la tabla de datos
         """
         pass
 
-    @property
+    title = property(get_title, set_title)
+
     @abstractmethod
-    def titulo(self):
+    def get_titulo(self):
         pass
 
-    @titulo.setter
     @abstractmethod
-    def titulo(self, titulo: str):
+    def set_titulo(self, titulo: str):
         """
         Título en español de la tabla de datos
         """
         pass
+
+    titulo = property(get_titulo, set_titulo)
