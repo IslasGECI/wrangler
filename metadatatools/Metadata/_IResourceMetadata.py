@@ -23,31 +23,31 @@ class IResourceMetadata(ABC):
         """
         pass
 
-    @property
     @abstractmethod
-    def name(self):
+    def get_name(self):
         pass
 
-    @name.setter
     @abstractmethod
-    def name(self, name: str):
+    def set_name(self, name: str):
         """
         Nombre del paquete, este debe ser corto y que se pueda usar para construir un url
         """
         pass
 
-    @property
+    name = property(get_name, set_name)
+
     @abstractmethod
-    def path(self):
+    def get_path(self):
         pass
 
-    @path.setter
     @abstractmethod
-    def path(self, path: str):
+    def set_path(self, path: str):
         """
         Dirección del archivo en el disco duro
         """
         pass
+
+    path = property(get_path, set_path)
 
     @property
     @abstractmethod

@@ -43,22 +43,22 @@ titulo = {self._titulo}
     def description(self, description):
         self._description = description
 
-    @property
-    def name(self):
+    def get_name(self):
         return self._name
 
-    @name.setter
-    def name(self, name):
+    def set_name(self, name):
         self._id = self._create_id(name)
         self._name = name
 
-    @property
-    def path(self):
+    name = property(get_name, set_name)
+
+    def get_path(self):
         return self._path
 
-    @path.setter
-    def path(self, path):
+    def set_path(self, path):
         self._path = path
+
+    path = property(get_path, set_path)
 
     @property
     def profile(self):
