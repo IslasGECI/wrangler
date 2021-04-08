@@ -4,7 +4,6 @@ import os
 import pandas as pd
 
 from ..Metadata import DataTable, ResourceMetadata, VariableMetadata
-from .. import Axis, StandardName
 
 
 def import_tabular_data_resource(path: str):

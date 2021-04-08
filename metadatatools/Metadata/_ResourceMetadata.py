@@ -1,5 +1,4 @@
 from ._IResourceMetadata import IResourceMetadata
-from ._VariableMetadata import VariableMetadata
 
 
 class ResourceMetadata(IResourceMetadata):

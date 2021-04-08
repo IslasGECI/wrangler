@@ -1,4 +1,3 @@
-from .. import Axis, StandardName
 from ._IVariableMetadata import IVariableMetadata
 
 

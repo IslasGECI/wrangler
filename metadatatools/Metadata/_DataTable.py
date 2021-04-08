@@ -1,7 +1,5 @@
 import pandas as pd
 
-from ._IDataVariable import IDataVariable
-from ._IVariableMetadata import IVariableMetadata
 from ._VariableMetadata import VariableMetadata
 from .. import Axis, StandardName
 import copy
