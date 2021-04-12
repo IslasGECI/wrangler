@@ -4,72 +4,72 @@ from .. import Axis, StandardName
 
 
 class IVariableMetadata(ABC):
-    @property
     @abstractmethod
-    def axis(self):
+    def get_axis(self):
         pass
 
-    @axis.setter
     @abstractmethod
-    def axis(self, axis: Axis):
+    def set_axis(self, axis: Axis):
         pass
 
-    @property
+    axis = property(get_axis, set_axis)
+
     @abstractmethod
-    def description(self):
+    def get_description(self):
         pass
 
-    @description.setter
     @abstractmethod
-    def description(self, descripcion: str):
+    def set_description(self, descripcion: str):
         pass
 
-    @property
+    description = property(get_description, set_description)
+
     @abstractmethod
-    def name(self):
+    def get_name(self):
         pass
 
-    @name.setter
     @abstractmethod
-    def name(self, name: str):
+    def set_name(self, name: str):
         pass
 
-    @property
+    name = property(get_name, set_name)
+
     @abstractmethod
-    def long_name(self):
+    def get_long_name(self):
         pass
 
-    @long_name.setter
     @abstractmethod
-    def long_name(self, long_name: str):
+    def set_long_name(self, long_name: str):
         pass
 
-    @property
+    long_name = property(get_long_name, set_long_name)
+
     @abstractmethod
-    def nombre_largo(self):
+    def get_nombre_largo(self):
         pass
 
-    @nombre_largo.setter
     @abstractmethod
-    def nombre_largo(self, nombre_largo: str):
+    def set_nombre_largo(self, nombre_largo: str):
         pass
 
-    @property
+    nombre_largo = property(get_nombre_largo, set_nombre_largo)
+
     @abstractmethod
-    def standard_name(self):
+    def get_standard_name(self):
         pass
 
-    @standard_name.setter
     @abstractmethod
-    def standard_name(self, standard_name: StandardName):
+    def set_standard_name(self, standard_name: StandardName):
         pass
 
-    @property
+    standard_name = property(get_standard_name, set_standard_name)
+
     @abstractmethod
-    def units(self):
+    def get_units(self):
         pass
 
-    @units.setter
     @abstractmethod
-    def units(self, units: str):
+    def set_units(self, units: str):
         pass
+
+    units = property(get_units, set_units)
