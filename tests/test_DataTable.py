@@ -50,6 +50,7 @@ def test_Resource_Metadata():
     assert expected_resource_metadata.description == "descripcion captura_gatos_socorro"
     assert expected_resource_metadata.source == ""
 
+
 def test_Varible_Metadata():
     expected_variables_metadata = SocorroData.metadatos_variables
     assert (
@@ -73,6 +74,7 @@ def test_where():
     are_equal = (expected_catches == obtained_catches).all()
     assert are_equal
 
+
 def test_where_2():
     index = [True, False, False, False, False]
     original_expected_path = SocorroData.metadatos.get_path()
@@ -81,7 +83,6 @@ def test_where_2():
     FilteredSocorroData.metadatos.set_path(new_path)
     assert SocorroData.metadatos.get_path() == original_expected_path
     assert len(SocorroData.metadatos_variables) == len(FilteredSocorroData.metadatos_variables)
-
 
 
 def test_init():
