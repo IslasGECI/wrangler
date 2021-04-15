@@ -12,11 +12,8 @@ class DataTable:
         self._metadatos_variables = []
 
     def where(self, funcion_filtrado):
-        datos_filtrados = DataTable()
-        datos_filtrados._datos = self._datos.copy()
+        datos_filtrados = copy.deepcopy(self)
         datos_filtrados._datos = datos_filtrados._datos[funcion_filtrado]
-        datos_filtrados._metadatos = copy.deepcopy(self._metadatos)
-        datos_filtrados._metadatos_variables = self._metadatos_variables.copy()
         return datos_filtrados
 
     def __str__(self):
