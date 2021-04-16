@@ -1,0 +1,29 @@
+[
+  {
+    "name": " ",
+    "description": " ",
+    "docker_parent_image": "python:3.7",
+    "report": " ",
+    "results": [
+    ],
+    "scripts": [
+    ],
+    "data": [
+      {
+        "source": "tabular_data_packages",
+        "version": "d4943ed041e5c2ffde2d5f09eb606fd7f82695b9",
+        "path": "esfuerzos_capturas_gatos_socorro",
+        "type": "csv",
+        "filename": "captura_gatos_socorro.csv"
+      },
+      {
+        "source": "tabular_data_packages",
+        "version": "d4943ed041e5c2ffde2d5f09eb606fd7f82695b9",
+        "path": "esfuerzos_capturas_gatos_socorro",
+        "type": "json",
+        "filename": "datapackage.json"
+      }
+    ],
+    "requirements": []
+  }
+]
