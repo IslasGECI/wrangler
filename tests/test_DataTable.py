@@ -34,8 +34,8 @@ def test_add_variable_metadata():
 
 def test_get_value():
     column_name: str = "Capturas"
-    obtained_catches: np.array = np.array(SocorroData.get_value(column_name))
     expected_catches: np.array = np.array([51, 31, 33, 21, 10])
+    obtained_catches: np.array = np.array(SocorroData.get_value(column_name))
     are_equal = (expected_catches == obtained_catches).all()
     assert are_equal
 
@@ -69,8 +69,8 @@ def test_where():
     index = [True, False, False, False, False]
     FilteredSocorroData: np.array = SocorroData.where(index)
     column_name: str = "Capturas"
-    obtained_catches: np.array = np.array(FilteredSocorroData.get_value(column_name))
     expected_catches: np.array = np.array([51])
+    obtained_catches: np.array = np.array(FilteredSocorroData.get_value(column_name))
     are_equal = (expected_catches == obtained_catches).all()
     assert are_equal
 
@@ -94,7 +94,7 @@ def test_init():
 def test_apply():
     SocorroData.apply(lambda x: x + 1, "Capturas")
     column_name: str = "Capturas"
-    obtained_catches: np.array = np.array(SocorroData.get_value(column_name))
     expected_catches: np.array = np.array([51, 31, 33, 21, 10]) + 1
+    obtained_catches: np.array = np.array(SocorroData.get_value(column_name))
     are_equal = (expected_catches == obtained_catches).all()
     assert are_equal
