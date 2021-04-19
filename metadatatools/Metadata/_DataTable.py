@@ -8,7 +8,7 @@ import copy
 class DataTable:
     def __init__(self):
         self._data = None
-        self._metadatos = None
+        self._metadata = None
         self._metadatos_variables = []
 
     def where(self, funcion_filtrado):
@@ -32,11 +32,11 @@ class DataTable:
 
     @property
     def metadatos(self):
-        return self._metadatos
+        return self._metadata
 
     @metadatos.setter
     def metadatos(self, metadatos: pd.DataFrame):
-        self._metadatos = metadatos
+        self._metadata = metadatos
 
     @property
     def metadatos_variables(self):
