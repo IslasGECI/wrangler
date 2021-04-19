@@ -7,28 +7,28 @@ import copy
 
 class DataTable:
     def __init__(self):
-        self._datos = None
+        self._data = None
         self._metadatos = None
         self._metadatos_variables = []
 
     def where(self, funcion_filtrado):
         datos_filtrados = copy.deepcopy(self)
-        datos_filtrados._datos = datos_filtrados._datos[funcion_filtrado]
+        datos_filtrados._data = datos_filtrados._data[funcion_filtrado]
         return datos_filtrados
 
     def __str__(self):
-        return self._datos.head().to_string() + f"\n ...\n {len(self._datos)} renglones"
+        return self._data.head().to_string() + f"\n ...\n {len(self._data)} renglones"
 
     def __repr__(self):
         return self.__str__()
 
     @property
     def datos(self):
-        return self._datos
+        return self._data
 
     @datos.setter
     def datos(self, datos: pd.DataFrame):
-        self._datos = datos
+        self._data = datos
 
     @property
     def metadatos(self):
@@ -67,7 +67,7 @@ class DataTable:
         return None
 
     def apply(self, funcion, nombre_columna):
-        self._datos[nombre_columna] = self._datos[nombre_columna].apply(funcion)
+        self._data[nombre_columna] = self._data[nombre_columna].apply(funcion)
 
     def get_value(self, nombre_columna):
-        return self._datos[nombre_columna].values
+        return self._data[nombre_columna].values
