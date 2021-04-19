@@ -69,7 +69,7 @@ class IResourceMetadata(ABC):
     @abstractmethod
     def set_source(self, source: str):
         """
-        Descripción sobre el origen de los datos
+        Descripción sobre el origen de los data
         """
         pass
 
@@ -82,7 +82,7 @@ class IResourceMetadata(ABC):
     @abstractmethod
     def set_title(self, title: str):
         """
-        Título en inglés de la tabla de datos
+        Título en inglés de la tabla de data
         """
         pass
 
@@ -95,7 +95,7 @@ class IResourceMetadata(ABC):
     @abstractmethod
     def set_titulo(self, titulo: str):
         """
-        Título en español de la tabla de datos
+        Título en español de la tabla de data
         """
         pass
 

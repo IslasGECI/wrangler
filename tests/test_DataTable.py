@@ -41,7 +41,7 @@ def test_get_value():
 
 
 def test_Resource_Metadata():
-    expected_resource_metadata = SocorroData.metadatos
+    expected_resource_metadata = SocorroData.metadata
     assert "captura_gatos_socorro" == expected_resource_metadata.name
     assert "capturagatossocorro" == expected_resource_metadata.id
     assert expected_resource_metadata.path == "tests/data/erradicaciones-mamiferos"
@@ -77,18 +77,18 @@ def test_where():
 
 def test_where_2():
     index = [True, False, False, False, False]
-    original_expected_path = SocorroData.metadatos.get_path()
+    original_expected_path = SocorroData.metadata.get_path()
     FilteredSocorroData = SocorroData.where(index)
     new_path: str = "non_existing_path"
-    FilteredSocorroData.metadatos.set_path(new_path)
-    assert SocorroData.metadatos.get_path() == original_expected_path
+    FilteredSocorroData.metadata.set_path(new_path)
+    assert SocorroData.metadata.get_path() == original_expected_path
     assert len(SocorroData.metadatos_variables) == len(FilteredSocorroData.metadatos_variables)
 
 
 def test_init():
     data = mdt.Metadata.DataTable()
-    assert data.datos is None
-    assert data.metadatos is None
+    assert data.data is None
+    assert data.metadata is None
 
 
 def test_apply():

@@ -3,7 +3,7 @@ from ._IResourceMetadata import IResourceMetadata
 
 class ResourceMetadata(IResourceMetadata):
     """
-    Esta clase se encarga de representar los metadatos asociados a una variable
+    Esta clase se encarga de representar los metadata asociados a una variable
     """
 
     def __init__(self):

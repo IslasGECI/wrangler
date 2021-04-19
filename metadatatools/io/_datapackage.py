@@ -26,21 +26,21 @@ def import_tabular_data_resource(path: str):
         if recurso["path"] == direccion_recurso:
             diccionario_metadatos_variables = recurso
     metadatos_recurso = _build_metadata(diccionario_metadatos_variables, direccion_datapackage)
-    data_table.metadatos = metadatos_recurso
+    data_table.metadata = metadatos_recurso
     add_variable_metadata(data_table, diccionario_metadatos_variables)
-    data_table.datos = tabla_datos
+    data_table.data = tabla_datos
     return data_table
 
 
-def _build_metadata(metadatos, direccion_datapackage):
+def _build_metadata(metadata, direccion_datapackage):
     metadatos_recurso = ResourceMetadata()
-    metadatos_recurso.name = metadatos.get("name", "")
-    metadatos_recurso.description = metadatos.get("description", "")
+    metadatos_recurso.name = metadata.get("name", "")
+    metadatos_recurso.description = metadata.get("description", "")
     metadatos_recurso.path = direccion_datapackage
-    metadatos_recurso.profile = metadatos.get("profile", "")
-    metadatos_recurso.source = metadatos.get("sources", "")
-    metadatos_recurso.title = metadatos.get("title", "")
-    metadatos_recurso.titulo = metadatos.get("titulo", "")
+    metadatos_recurso.profile = metadata.get("profile", "")
+    metadatos_recurso.source = metadata.get("sources", "")
+    metadatos_recurso.title = metadata.get("title", "")
+    metadatos_recurso.titulo = metadata.get("titulo", "")
     return metadatos_recurso
 
 

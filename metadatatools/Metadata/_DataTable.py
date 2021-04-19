@@ -23,20 +23,20 @@ class DataTable:
         return self.__str__()
 
     @property
-    def datos(self):
+    def data(self):
         return self._data
 
-    @datos.setter
-    def datos(self, datos: pd.DataFrame):
-        self._data = datos
+    @data.setter
+    def data(self, data: pd.DataFrame):
+        self._data = data
 
     @property
-    def metadatos(self):
+    def metadata(self):
         return self._metadata
 
-    @metadatos.setter
-    def metadatos(self, metadatos: pd.DataFrame):
-        self._metadata = metadatos
+    @metadata.setter
+    def metadata(self, metadata: pd.DataFrame):
+        self._metadata = metadata
 
     @property
     def metadatos_variables(self):
@@ -44,7 +44,7 @@ class DataTable:
 
     def add_variable_metadata(self, variable_metadata):
         if not isinstance(variable_metadata, VariableMetadata):
-            raise TypeError("Se espera un objeto de la clase datatools.Metadatos.VariableMetadata")
+            raise TypeError("Se espera un objeto de la clase datatools.metadata.VariableMetadata")
         self._metadatos_variables.append(variable_metadata)
 
     def get_variable_name_from_attribute(self):
