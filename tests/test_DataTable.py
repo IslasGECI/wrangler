@@ -52,7 +52,7 @@ def test_Resource_Metadata():
 
 
 def test_Varible_Metadata():
-    expected_variables_metadata = SocorroData.metadatos_variables
+    expected_variables_metadata = SocorroData.variable_metadata
     assert (
         expected_variables_metadata[0].description
         == "Indica la cantidad de trampas por noche utilizadas para la erradicación"
@@ -82,7 +82,7 @@ def test_where_2():
     new_path: str = "non_existing_path"
     FilteredSocorroData.metadata.set_path(new_path)
     assert SocorroData.metadata.get_path() == original_expected_path
-    assert len(SocorroData.metadatos_variables) == len(FilteredSocorroData.metadatos_variables)
+    assert len(SocorroData.variable_metadata) == len(FilteredSocorroData.variable_metadata)
 
 
 def test_init():

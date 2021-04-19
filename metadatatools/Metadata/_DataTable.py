@@ -9,7 +9,7 @@ class DataTable:
     def __init__(self):
         self._data = None
         self._metadata = None
-        self._metadatos_variables = []
+        self._variable_metadata = []
 
     def where(self, filter_fuction):
         filtered_data = copy.deepcopy(self)
@@ -39,13 +39,13 @@ class DataTable:
         self._metadata = metadata
 
     @property
-    def metadatos_variables(self):
-        return self._metadatos_variables
+    def variable_metadata(self):
+        return self._variable_metadata
 
     def add_variable_metadata(self, variable_metadata):
         if not isinstance(variable_metadata, VariableMetadata):
             raise TypeError("Se espera un objeto de la clase datatools.metadata.VariableMetadata")
-        self._metadatos_variables.append(variable_metadata)
+        self._variable_metadata.append(variable_metadata)
 
     def get_variable_name_from_attribute(self):
         pass
@@ -53,7 +53,7 @@ class DataTable:
     def get_variable_name_from_axis(self, axis: Axis):
         if not isinstance(axis, Axis):
             raise TypeError("Se espera un objeto de la clase datatools.Axis")
-        for variable in self._metadatos_variables:
+        for variable in self._variable_metadata:
             if axis.name == variable.axis:
                 return variable.name
         return None
@@ -61,7 +61,7 @@ class DataTable:
     def get_variable_name_from_standard_name(self, standard_name: StandardName):
         if not isinstance(standard_name, StandardName):
             raise TypeError("Se espera un objeto de la clase datatools.StandardName")
-        for variable in self._metadatos_variables:
+        for variable in self._variable_metadata:
             if standard_name.name == variable.standard_name:
                 return variable.name
         return None
