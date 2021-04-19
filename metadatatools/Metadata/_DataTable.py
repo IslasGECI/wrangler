@@ -11,10 +11,10 @@ class DataTable:
         self._metadata = None
         self._metadatos_variables = []
 
-    def where(self, funcion_filtrado):
-        datos_filtrados = copy.deepcopy(self)
-        datos_filtrados._data = datos_filtrados._data[funcion_filtrado]
-        return datos_filtrados
+    def where(self, filter_fuction):
+        filtered_data = copy.deepcopy(self)
+        filtered_data._data = filtered_data._data[filter_fuction]
+        return filtered_data
 
     def __str__(self):
         return self._data.head().to_string() + f"\n ...\n {len(self._data)} renglones"
@@ -66,8 +66,8 @@ class DataTable:
                 return variable.name
         return None
 
-    def apply(self, funcion, nombre_columna):
-        self._data[nombre_columna] = self._data[nombre_columna].apply(funcion)
+    def apply(self, function, column_name):
+        self._data[column_name] = self._data[column_name].apply(function)
 
-    def get_value(self, nombre_columna):
-        return self._data[nombre_columna].values
+    def get_value(self, column_name):
+        return self._data[column_name].values
