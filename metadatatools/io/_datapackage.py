@@ -16,9 +16,7 @@ def import_tabular_data_resource(path: str):
     Dirección al resource que quieres importar
     """
     head_path, tail_path = os.path.split(path)
-    with open(
-        f"{head_path}/datapackage.json", "r", encoding="utf-8"
-    ) as metadata_file:
+    with open(f"{head_path}/datapackage.json", "r", encoding="utf-8") as metadata_file:
         metadata_dictionary = json.load(metadata_file)
     tabla_datos = pd.read_csv(path)
     data_table = DataTable()
