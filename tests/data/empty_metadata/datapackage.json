@@ -1,0 +1,56 @@
+{
+    "name": "esfuerzos_capturas_gatos_socorro",
+    "schema": "tabular-data-package",
+    "profile": "tabular-data-package",
+    "institution": "Grupo de Ecología y Conservación de Islas",
+    "resources": [
+        {
+            "path": "captura_gatos_socorro.csv",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "sources": "fuente",
+            "schema": {
+                "fields": [
+                    {
+                        "axis": "",
+                        "type": "integer",
+                        "format": "default",
+                        "constraints": {
+                            "minimum": 0
+                        },
+                        "description": "Indica la cantidad de trampas por noche utilizadas para la erradicación",
+                        "long_name": "Effort",
+                        "nombre_largo": "Esfuerzo",
+                        "standard_name": "effort",
+                        "units": ""
+                    },
+                    {
+                        "name": "Capturas",
+                        "type": "integer",
+                        "format": "default",
+                        "constraints": {
+                            "minimum": 0
+                        },
+                        "description": "Indica la cantidad de capturas de gatos realizadas hasta la fecha indicada",
+                        "long_name": "Cat catchs",
+                        "nombre_largo": "Capturas de gatos",
+                        "standard_name": "catches",
+                        "units": "cats"
+                    },
+                    {
+                        "name": "Fecha",
+                        "format": "default",
+                        "constraints": {
+                            "pattern": "(0[1-9]|[1-2][0-9]|3[0-1])\/(Ene|Feb|Mar|Abr|May|Jun|Jul|Ago|Sep|Oct|Nov|Dic)\/(20[0-9]{2}|2[0-9]{3})"
+                        },
+                        "axis": "T"
+                    }
+                ],
+                "missingValues": [
+                    "NA"
+                ]
+            }
+        }
+    ]
+}
