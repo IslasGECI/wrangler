@@ -1,4 +1,4 @@
-# Metadata Tools <a><img src='https://i.imgur.com/BRHIIhr.png' align="right" height="135.5" /></a>
+# Data Wrangler <a><img src='https://i.imgur.com/BRHIIhr.png' align="right" height="135.5" /></a>
 
 [![codecov](https://codecov.io/gh/IslasGECI/wrangler/branch/develop/graph/badge.svg)](https://codecov.io/gh/IslasGECI/wrangler)
 ![GitHub Actions](https://github.com/IslasGECI/wrangler/actions/workflows/actions.yml/badge.svg)
