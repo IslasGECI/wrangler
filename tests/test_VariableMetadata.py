@@ -1,7 +1,7 @@
-import metadatatools as mdt
+import wrangler as wrg
 import pytest
 
-VariableMetadata = mdt.Metadata._VariableMetadata.VariableMetadata()
+VariableMetadata = wrg.Metadata._VariableMetadata.VariableMetadata()
 
 
 def test_init_():
@@ -37,12 +37,12 @@ def test_IVariableMetadata():
         TypeError,
         match=r"abstract methods axis, description, get_axis, get_description, get_long_name, get_name, get_nombre_largo, get_standard_name, get_units, long_name, name, nombre_largo, set_axis, set_description, set_long_name, set_name, set_nombre_largo, set_standard_name, set_units, standard_name, units$",
     ):
-        mdt.Metadata.IVariableMetadata()
+        wrg.Metadata.IVariableMetadata()
 
-    assert isinstance(mdt.Metadata.IVariableMetadata.axis, property)
-    assert isinstance(mdt.Metadata.IVariableMetadata.description, property)
-    assert isinstance(mdt.Metadata.IVariableMetadata.name, property)
-    assert isinstance(mdt.Metadata.IVariableMetadata.long_name, property)
-    assert isinstance(mdt.Metadata.IVariableMetadata.nombre_largo, property)
-    assert isinstance(mdt.Metadata.IVariableMetadata.standard_name, property)
-    assert isinstance(mdt.Metadata.IVariableMetadata.units, property)
+    assert isinstance(wrg.Metadata.IVariableMetadata.axis, property)
+    assert isinstance(wrg.Metadata.IVariableMetadata.description, property)
+    assert isinstance(wrg.Metadata.IVariableMetadata.name, property)
+    assert isinstance(wrg.Metadata.IVariableMetadata.long_name, property)
+    assert isinstance(wrg.Metadata.IVariableMetadata.nombre_largo, property)
+    assert isinstance(wrg.Metadata.IVariableMetadata.standard_name, property)
+    assert isinstance(wrg.Metadata.IVariableMetadata.units, property)

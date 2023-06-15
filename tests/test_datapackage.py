@@ -1,8 +1,8 @@
-import metadatatools as mdt
+import wrangler as wrg
 
 
 file_dtp_path: str = "tests/data/erradicaciones-mamiferos/captura_gatos_socorro.csv"
-SocorroData = mdt.import_tabular_data_resource(file_dtp_path)
+SocorroData = wrg.import_tabular_data_resource(file_dtp_path)
 
 
 def test_datapackages():
@@ -17,7 +17,7 @@ def test_datapackages():
 
 
 file_dtp_path: str = "tests/data/empty_metadata/captura_gatos_socorro.csv"
-SocorroData2 = mdt.import_tabular_data_resource(file_dtp_path)
+SocorroData2 = wrg.import_tabular_data_resource(file_dtp_path)
 
 
 def test_datapackages_empty_metadata():

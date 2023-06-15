@@ -8,10 +8,10 @@ jobs:
     - name: Copia repositorio
       uses: actions/checkout@v2
     - name: Construye imagen
-      run: docker build --tag islasgeci/metadata_tools .
+      run: docker build --tag islasgeci/wrangler .
     - name: Verifica el formato
-      run: docker run islasgeci/metadata_tools make check
+      run: docker run islasgeci/wrangler make check
     - name: Corre pruebas y evalua cobertura
-      run: docker run islasgeci/metadata_tools make coverage
+      run: docker run islasgeci/wrangler make coverage
     - name: Evalua resistencia a mutaciones
-      run: docker run islasgeci/metadata_tools make mutants
+      run: docker run islasgeci/wrangler make mutants

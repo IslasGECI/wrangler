@@ -1,7 +1,7 @@
-import metadatatools as mdt
+import wrangler as wrg
 import pytest
 
-ResourceMetadata = mdt.Metadata._ResourceMetadata.ResourceMetadata()
+ResourceMetadata = wrg.Metadata._ResourceMetadata.ResourceMetadata()
 
 
 def test_init_():
@@ -37,12 +37,12 @@ def test_IResourceMetadata():
         TypeError,
         match=r"abstract methods description, get_description, get_name, get_path, get_profile, get_source, get_title, get_titulo, id, name, path, profile, set_description, set_name, set_path, set_profile, set_source, set_title, set_titulo, source, title, titulo$",
     ):
-        mdt.Metadata.IResourceMetadata()
+        wrg.Metadata.IResourceMetadata()
 
-    assert isinstance(mdt.Metadata.IResourceMetadata.description, property)
-    assert isinstance(mdt.Metadata.IResourceMetadata.id, property)
-    assert isinstance(mdt.Metadata.IResourceMetadata.path, property)
-    assert isinstance(mdt.Metadata.IResourceMetadata.profile, property)
-    assert isinstance(mdt.Metadata.IResourceMetadata.source, property)
-    assert isinstance(mdt.Metadata.IResourceMetadata.title, property)
-    assert isinstance(mdt.Metadata.IResourceMetadata.titulo, property)
+    assert isinstance(wrg.Metadata.IResourceMetadata.description, property)
+    assert isinstance(wrg.Metadata.IResourceMetadata.id, property)
+    assert isinstance(wrg.Metadata.IResourceMetadata.path, property)
+    assert isinstance(wrg.Metadata.IResourceMetadata.profile, property)
+    assert isinstance(wrg.Metadata.IResourceMetadata.source, property)
+    assert isinstance(wrg.Metadata.IResourceMetadata.title, property)
+    assert isinstance(wrg.Metadata.IResourceMetadata.titulo, property)

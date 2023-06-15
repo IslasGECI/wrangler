@@ -1,10 +1,10 @@
 import numpy as np
-import metadatatools as mdt
+import wrangler as wrg
 import pytest
 
 
 file_dtp_path: str = "tests/data/erradicaciones-mamiferos/captura_gatos_socorro.csv"
-SocorroData = mdt.import_tabular_data_resource(file_dtp_path)
+SocorroData = wrg.import_tabular_data_resource(file_dtp_path)
 
 
 def test_repr():
@@ -13,7 +13,7 @@ def test_repr():
 
 def test_get_variable_name_from_standard_name():
     expected_name: str = "Esfuerzo"
-    obtained_name: str = SocorroData.get_variable_name_from_standard_name(mdt.StandardName.effort)
+    obtained_name: str = SocorroData.get_variable_name_from_standard_name(wrg.StandardName.effort)
     assert expected_name == obtained_name
     with pytest.raises(TypeError, match=r"^Se espera un objeto de la clase"):
         obtained_name: str = SocorroData.get_variable_name_from_standard_name("Hola")
@@ -21,7 +21,7 @@ def test_get_variable_name_from_standard_name():
 
 def test_get_variable_name_from_axis():
     expected_name: str = "Fecha"
-    obtained_name: str = SocorroData.get_variable_name_from_axis(mdt.Axis.T)
+    obtained_name: str = SocorroData.get_variable_name_from_axis(wrg.Axis.T)
     assert expected_name == obtained_name
     with pytest.raises(TypeError, match=r"^Se espera un objeto"):
         obtained_name: str = SocorroData.get_variable_name_from_axis("Hola")
@@ -86,7 +86,7 @@ def test_where_2():
 
 
 def test_init():
-    data = mdt.Metadata.DataTable()
+    data = wrg.Metadata.DataTable()
     assert data.data is None
     assert data.metadata is None
 
