@@ -2,6 +2,8 @@
 Este es el módulo principal de datatools
 """
 
+__version__ = "0.2.2"
+
 from ._Axis import Axis  # noqa
 from ._StandardName import StandardName  # noqa
 from .Metadata import ResourceMetadata  # noqa
