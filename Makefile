@@ -22,6 +22,13 @@ format:
 	black --line-length 100 ${repo}
 	black --line-length 100 tests
 
+init: init_git setup tests
+	
+init_git:
+	git config --global --add safe.directory /workdir
+	git config --global user.name "Ciencia de Datos • GECI"
+	git config --global user.email "ciencia.datos@islas.org.mx"
+
 install:
 	pip install --editable .
 
@@ -38,8 +45,28 @@ coverage: install
 	pytest --cov=${repo} --cov-report=xml --verbose && \
 	codecov --token=${codecov_token}
 
-tests: install
+setup: clean install
+
+tests:
 	pytest --verbose
+
+red: format
+	pytest --verbose \
+	&& git restore tests/*.py \
+	|| (git add tests/*.py && git commit -m "🛑🧪 Fail tests")
+	chmod g+w -R .
+
+green: format
+	pytest --verbose \
+	&& (git add ${repo}/*.py && git commit -m "✅ Pass tests") \
+	|| git restore ${repo}/*.py
+	chmod g+w -R .
+
+refactor: format
+	pytest --verbose \
+	&& (git add ${repo}/*.py tests/*.py && git commit -m "♻️  Refactor") \
+	|| git restore ${repo}/*.py tests/*.py
+	chmod g+w -R .
 
 import: install
 	python -c "import wrangler" && printf "\n\nÉXITO: Sí pude importar datatools\n\n" || { printf "\n\nERROR: No pude importar datatools\n\n"; exit 1; }
