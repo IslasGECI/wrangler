@@ -12,5 +12,8 @@ def test_init():
 
 
 def test_IDataVariable():
-    with pytest.raises(TypeError, match=r"abstract methods get_variable_metadata$"):
+    with pytest.raises(
+        TypeError,
+        match=r"Can't instantiate abstract class IDataVariable without an implementation for abstract method 'get_variable_metadata'",
+    ):
         wrg.Metadata.IDataVariable()

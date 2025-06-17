@@ -35,7 +35,7 @@ def test_properties():
 def test_IResourceMetadata():
     with pytest.raises(
         TypeError,
-        match=r"abstract methods description, get_description, get_name, get_path, get_profile, get_source, get_title, get_titulo, id, name, path, profile, set_description, set_name, set_path, set_profile, set_source, set_title, set_titulo, source, title, titulo$",
+        match=r"Can't instantiate abstract class IResourceMetadata without an implementation for abstract methods 'description', 'get_description', 'get_name', 'get_path', 'get_profile', 'get_source', 'get_title', 'get_titulo', 'id', 'name', 'path', 'profile', 'set_description', 'set_name', 'set_path', 'set_profile', 'set_source', 'set_title', 'set_titulo', 'source', 'title', 'titulo'",
     ):
         wrg.Metadata.IResourceMetadata()
 

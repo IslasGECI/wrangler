@@ -35,7 +35,7 @@ def test_property():
 def test_IVariableMetadata():
     with pytest.raises(
         TypeError,
-        match=r"abstract methods axis, description, get_axis, get_description, get_long_name, get_name, get_nombre_largo, get_standard_name, get_units, long_name, name, nombre_largo, set_axis, set_description, set_long_name, set_name, set_nombre_largo, set_standard_name, set_units, standard_name, units$",
+        match=r"Can't instantiate abstract class IVariableMetadata without an implementation for abstract methods 'axis', 'description', 'get_axis', 'get_description', 'get_long_name', 'get_name', 'get_nombre_largo', 'get_standard_name', 'get_units', 'long_name', 'name', 'nombre_largo', 'set_axis', 'set_description', 'set_long_name', 'set_name', 'set_nombre_largo', 'set_standard_name', 'set_units', 'standard_name', 'units'",
     ):
         wrg.Metadata.IVariableMetadata()
 
