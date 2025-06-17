@@ -7,7 +7,6 @@ RUN pip install \
     codecov \
     flake8 \
     mutmut \
-    pandas \
     pylint \
     pylint-fail-under \
     pytest-cov \
