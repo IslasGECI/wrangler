@@ -1,6 +1,6 @@
 all: mutants
 
-repo = wrangler
+repo = metadata_wrangler
 codecov_token = 92c09c8a-f80e-4220-af6d-1b8bb79be8f1
 
 .PHONY: all clean format install lint mutants tests
@@ -69,4 +69,4 @@ refactor: format
 	chmod g+w -R .
 
 import: install
-	python -c "import wrangler" && printf "\n\nÉXITO: Sí pude importar datatools\n\n" || { printf "\n\nERROR: No pude importar datatools\n\n"; exit 1; }
+	python -c "import metadata_wrangler" && printf "\n\nÉXITO: Sí pude importar datatools\n\n" || { printf "\n\nERROR: No pude importar datatools\n\n"; exit 1; }
