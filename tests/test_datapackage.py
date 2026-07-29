@@ -1,5 +1,4 @@
-import wrangler as wrg
-
+import metadata_wrangler as wrg
 
 file_dtp_path: str = "tests/data/erradicaciones-mamiferos/captura_gatos_socorro.csv"
 SocorroData = wrg.import_tabular_data_resource(file_dtp_path)

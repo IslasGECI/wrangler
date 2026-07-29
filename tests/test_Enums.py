@@ -1,4 +1,4 @@
-import wrangler as wrg
+import metadata_wrangler as wrg
 
 
 def test_StandardName():

@@ -1,4 +1,4 @@
-import wrangler as wrg
+import metadata_wrangler as wrg
 import pytest
 
 ResourceMetadata = wrg.Metadata._ResourceMetadata.ResourceMetadata()
