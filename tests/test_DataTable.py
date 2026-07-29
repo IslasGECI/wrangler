@@ -7,7 +7,7 @@ SocorroData = wrg.import_tabular_data_resource(file_dtp_path)
 
 
 def test_repr():
-    assert "renglones" in repr(SocorroData)
+    assert repr(SocorroData).endswith("renglones")
 
 
 def test_get_variable_name_from_standard_name():
