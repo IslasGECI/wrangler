@@ -30,6 +30,9 @@ def test_property():
     assert VariableMetadata._standard_name == "Nombre estandar"
     VariableMetadata.units = "Unidades"
     assert VariableMetadata._units == "Unidades"
+    expected_type = "Tipo"
+    VariableMetadata._type = expected_type
+    assert repr(VariableMetadata).strip().endswith(expected_type)
 
 
 def test_IVariableMetadata():
