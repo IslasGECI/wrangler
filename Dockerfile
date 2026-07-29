@@ -1,7 +1,7 @@
 FROM python:3.12
 COPY . /workdir
 WORKDIR /workdir
-RUN pip install \
+RUN pip install --upgrade pip && pip install \
     autopep8 \
     black \
     codecov \
