@@ -4,9 +4,10 @@ on: [push, pull_request]
 jobs:
   actions:
     runs-on: ubuntu-latest
+    environment: pypi_token
     steps:
     - name: Copia repositorio
-      uses: actions/checkout@v2
+      uses: actions/checkout@main
     - name: Construye imagen
       run: docker build --tag islasgeci/wrangler .
     - name: Verifica el formato
@@ -16,15 +17,15 @@ jobs:
     - name: Evalua resistencia a mutaciones
       run: docker run islasgeci/wrangler make mutants
     - name: Create/Update tag
-      uses: rickstaa/action-create-tag@v1.5.4
+      uses: rickstaa/action-create-tag@main
       with:
         tag: "latest"
         message: "Latest release"
         force_push_tag: true
-    - name: Set up Python 3.9
-      uses: actions/setup-python@master
+    - name: Set up Python 3.x
+      uses: actions/setup-python@main
       with:
-        python-version: 3.9
+        python-version: '3.x'
     - name: Install pypa/build
       run: >-
         python -m
@@ -42,5 +43,4 @@ jobs:
     - name: Publish distribution 📦 to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
-        password: ${{ secrets.PYPI_TOKEN }}
         skip-existing: true
