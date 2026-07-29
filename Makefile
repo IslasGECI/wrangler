@@ -38,7 +38,7 @@ lint:
 	pylint ${repo}
 	pylint tests
 
-mutants:
+mutants: install
 	mutmut run --paths-to-mutate ${repo}
 
 coverage: install
@@ -64,7 +64,7 @@ green: format
 
 refactor: format
 	pytest --verbose \
-	&& (git add ${repo}/*.py tests/*.py && git commit -m "♻️  Refactor") \
+	&& (git add ${repo}/*.py tests/*.py && git commit -m "♻️ Refactor ${message}") \
 	|| git restore ${repo}/*.py tests/*.py
 	chmod g+w -R .
 
