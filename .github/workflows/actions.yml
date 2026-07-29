@@ -5,6 +5,8 @@ jobs:
   actions:
     runs-on: ubuntu-latest
     environment: pypi_token
+    permissions:
+      id-token: write
     steps:
     - name: Copia repositorio
       uses: actions/checkout@main
