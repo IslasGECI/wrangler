@@ -30,6 +30,7 @@ def test_properties():
     assert ResourceMetadata._title == "Title"
     ResourceMetadata.titulo = "Titulo"
     assert ResourceMetadata._titulo == "Titulo"
+    assert repr(ResourceMetadata).strip().endswith("Titulo")
 
 
 def test_IResourceMetadata():
